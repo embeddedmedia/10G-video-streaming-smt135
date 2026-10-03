@@ -4,6 +4,7 @@
 #include "PiCamV3.h"
 
 #define PI_CAM_V3_ADDR              0x1a
+#define IMX900_ADDR
 
 #define IMX708_REG_MODE_SELECT		0x0100
 #define IMX708_MODE_STANDBY		0x00
