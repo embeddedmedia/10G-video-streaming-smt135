@@ -12,7 +12,7 @@ _start:
 .option norelax
 	la gp, __global_pointer$
 f9000000:	00005197          	auipc	gp,0x5
-f9000004:	5c018193          	addi	gp,gp,1472 # f90055c0 <__global_pointer$>
+f9000004:	5c818193          	addi	gp,gp,1480 # f90055c8 <__global_pointer$>
 
 f9000008 <init>:
 	sw a0, smp_lottery_lock, a1
@@ -22,7 +22,7 @@ f9000008 <init>:
 init:
 	la sp, _sp
 f9000008:	00006117          	auipc	sp,0x6
-f900000c:	e4810113          	addi	sp,sp,-440 # f9005e50 <__freertos_irq_stack_top>
+f900000c:	e5810113          	addi	sp,sp,-424 # f9005e60 <__freertos_irq_stack_top>
 
 	/* Load data section */
 	la a0, _data_lma
@@ -33,7 +33,7 @@ f9000018:	00004597          	auipc	a1,0x4
 f900001c:	27858593          	addi	a1,a1,632 # f9004290 <_data>
 	la a2, _edata
 f9000020:	00005617          	auipc	a2,0x5
-f9000024:	dec60613          	addi	a2,a2,-532 # f9004e0c <input.1>
+f9000024:	df460613          	addi	a2,a2,-524 # f9004e14 <input.1>
 	bgeu a1, a2, 2f
 f9000028:	00c5fc63          	bgeu	a1,a2,f9000040 <init+0x38>
 1:
@@ -52,10 +52,10 @@ f900003c:	fec5e8e3          	bltu	a1,a2,f900002c <init+0x24>
 	/* Clear bss section */
 	la a0, __bss_start
 f9000040:	00005517          	auipc	a0,0x5
-f9000044:	dcc50513          	addi	a0,a0,-564 # f9004e0c <input.1>
+f9000044:	dd450513          	addi	a0,a0,-556 # f9004e14 <input.1>
 	la a1, _end
 f9000048:	00005597          	auipc	a1,0x5
-f900004c:	e0858593          	addi	a1,a1,-504 # f9004e50 <_end>
+f900004c:	e1058593          	addi	a1,a1,-496 # f9004e58 <_end>
 	bgeu a0, a1, 2f
 f9000050:	00b57863          	bgeu	a0,a1,f9000060 <init+0x58>
 1:
@@ -731,13 +731,13 @@ f9000600:	03412c23          	sw	s4,56(sp)
 f9000604:	03512a23          	sw	s5,52(sp)
     IPv4 local_ip = {.data = {20, 100, 16, 172}};
 f9000608:	ffff0437          	lui	s0,0xffff0
-f900060c:	0ff40413          	addi	s0,s0,255 # ffff00ff <__freertos_irq_stack_top+0x6fea2af>
+f900060c:	0ff40413          	addi	s0,s0,255 # ffff00ff <__freertos_irq_stack_top+0x6fea29f>
 f9000610:	01447913          	andi	s2,s0,20
 f9000614:	000066b7          	lui	a3,0x6
 f9000618:	40068693          	addi	a3,a3,1024 # 6400 <__stack_size+0x5400>
 f900061c:	00d96933          	or	s2,s2,a3
 f9000620:	ff010737          	lui	a4,0xff010
-f9000624:	fff70713          	addi	a4,a4,-1 # ff00ffff <__freertos_irq_stack_top+0x600a1af>
+f9000624:	fff70713          	addi	a4,a4,-1 # ff00ffff <__freertos_irq_stack_top+0x600a19f>
 f9000628:	00e97933          	and	s2,s2,a4
 f900062c:	001005b7          	lui	a1,0x100
 f9000630:	00b96933          	or	s2,s2,a1
@@ -1117,7 +1117,7 @@ f9000a40:	00050593          	mv	a1,a0
     // s32 avg_filter = lowPassFrequency(input, output, 10);
 
     return update_incremental(&exp_pid, avg);
-f9000a44:	86818513          	addi	a0,gp,-1944 # f9004e28 <exp_pid>
+f9000a44:	86818513          	addi	a0,gp,-1944 # f9004e30 <exp_pid>
 f9000a48:	ea5ff0ef          	jal	f90008ec <update_incremental>
 }
 f9000a4c:	00c12083          	lw	ra,12(sp)
@@ -1136,7 +1136,7 @@ f9000a5c:	00112623          	sw	ra,12(sp)
 f9000a60:	00812423          	sw	s0,8(sp)
     exp_pid.set_point = exp_setpoint;
 f9000a64:	68c030ef          	jal	f90040f0 <__floatunsisf>
-f9000a68:	86818413          	addi	s0,gp,-1944 # f9004e28 <exp_pid>
+f9000a68:	86818413          	addi	s0,gp,-1944 # f9004e30 <exp_pid>
 f9000a6c:	00a42623          	sw	a0,12(s0)
 }
 f9000a70:	00c12083          	lw	ra,12(sp)
@@ -1152,26 +1152,26 @@ f9000a84:	00112623          	sw	ra,12(sp)
 f9000a88:	00812423          	sw	s0,8(sp)
 f9000a8c:	00912223          	sw	s1,4(sp)
     exp_pid.actual_val=0.0;
-f9000a90:	86818413          	addi	s0,gp,-1944 # f9004e28 <exp_pid>
+f9000a90:	86818413          	addi	s0,gp,-1944 # f9004e30 <exp_pid>
 f9000a94:	00000493          	li	s1,0
 f9000a98:	00942423          	sw	s1,8(s0)
     exp_pid.set_point=exp_setpoint;
 f9000a9c:	654030ef          	jal	f90040f0 <__floatunsisf>
 f9000aa0:	00a42623          	sw	a0,12(s0)
     exp_pid.incr_limit = 1000.0;
-f9000aa4:	8281a783          	lw	a5,-2008(gp) # f9004de8 <fun_num.0+0x18>
+f9000aa4:	8281a783          	lw	a5,-2008(gp) # f9004df0 <fun_num.0+0x18>
 f9000aa8:	00f42023          	sw	a5,0(s0)
     exp_pid.output_limit = 4000.0;
-f9000aac:	82c1a783          	lw	a5,-2004(gp) # f9004dec <fun_num.0+0x1c>
+f9000aac:	82c1a783          	lw	a5,-2004(gp) # f9004df4 <fun_num.0+0x1c>
 f9000ab0:	00f42223          	sw	a5,4(s0)
     exp_pid.err_last = 0.0;
 f9000ab4:	00942c23          	sw	s1,24(s0)
     // exp_pid.acc_err = 0.0;
     exp_pid.kp = 1.50;
-f9000ab8:	8301a783          	lw	a5,-2000(gp) # f9004df0 <fun_num.0+0x20>
+f9000ab8:	8301a783          	lw	a5,-2000(gp) # f9004df8 <fun_num.0+0x20>
 f9000abc:	00f42e23          	sw	a5,28(s0)
     exp_pid.ki = 1.00;
-f9000ac0:	8341a783          	lw	a5,-1996(gp) # f9004df4 <fun_num.0+0x24>
+f9000ac0:	8341a783          	lw	a5,-1996(gp) # f9004dfc <fun_num.0+0x24>
 f9000ac4:	02f42023          	sw	a5,32(s0)
     exp_pid.kd = 0.00;
 f9000ac8:	02942223          	sw	s1,36(s0)
@@ -1878,18 +1878,18 @@ f9001068:	00050493          	mv	s1,a0
 f900106c:	07000513          	li	a0,112
 f9001070:	cdcff0ef          	jal	f900054c <read_apb_reg>
     if (e_tmp != e_raw || r_tmp != r_raw || g_tmp != g_raw || b_tmp != b_raw) {
-f9001074:	8641a783          	lw	a5,-1948(gp) # f9004e24 <e_raw.8>
+f9001074:	8641a783          	lw	a5,-1948(gp) # f9004e2c <e_raw.8>
 f9001078:	01279663          	bne	a5,s2,f9001084 <poll_host_settings+0x50>
-f900107c:	8601a783          	lw	a5,-1952(gp) # f9004e20 <r_raw.7>
+f900107c:	8601a783          	lw	a5,-1952(gp) # f9004e28 <r_raw.7>
 f9001080:	08878c63          	beq	a5,s0,f9001118 <poll_host_settings+0xe4>
         e_raw = e_tmp;
-f9001084:	8721a223          	sw	s2,-1948(gp) # f9004e24 <e_raw.8>
+f9001084:	8721a223          	sw	s2,-1948(gp) # f9004e2c <e_raw.8>
         r_raw = r_tmp;
-f9001088:	8681a023          	sw	s0,-1952(gp) # f9004e20 <r_raw.7>
+f9001088:	8681a023          	sw	s0,-1952(gp) # f9004e28 <r_raw.7>
         g_raw = g_tmp;
-f900108c:	8491ae23          	sw	s1,-1956(gp) # f9004e1c <g_raw.6>
+f900108c:	8491ae23          	sw	s1,-1956(gp) # f9004e24 <g_raw.6>
         b_raw = b_tmp;
-f9001090:	84a1ac23          	sw	a0,-1960(gp) # f9004e18 <b_raw.5>
+f9001090:	84a1ac23          	sw	a0,-1960(gp) # f9004e20 <b_raw.5>
         s32 r = 420 + ((s32)r_raw - 128);
 f9001094:	12440413          	addi	s0,s0,292
         s32 g = 256 + ((s32)g_raw - 128);
@@ -1897,11 +1897,11 @@ f9001098:	08048493          	addi	s1,s1,128
         s32 b = 600 + ((s32)b_raw - 128)*1.5;
 f900109c:	f8050513          	addi	a0,a0,-128
 f90010a0:	7c9010ef          	jal	f9003068 <__floatsidf>
-f90010a4:	8181a603          	lw	a2,-2024(gp) # f9004dd8 <fun_num.0+0x8>
-f90010a8:	81c1a683          	lw	a3,-2020(gp) # f9004ddc <fun_num.0+0xc>
+f90010a4:	8181a603          	lw	a2,-2024(gp) # f9004de0 <fun_num.0+0x8>
+f90010a8:	81c1a683          	lw	a3,-2020(gp) # f9004de4 <fun_num.0+0xc>
 f90010ac:	061010ef          	jal	f900290c <__muldf3>
-f90010b0:	8201a603          	lw	a2,-2016(gp) # f9004de0 <fun_num.0+0x10>
-f90010b4:	8241a683          	lw	a3,-2012(gp) # f9004de4 <fun_num.0+0x14>
+f90010b0:	8201a603          	lw	a2,-2016(gp) # f9004de8 <fun_num.0+0x10>
+f90010b4:	8241a683          	lw	a3,-2012(gp) # f9004dec <fun_num.0+0x14>
 f90010b8:	78d000ef          	jal	f9002044 <__adddf3>
 f90010bc:	729010ef          	jal	f9002fe4 <__fixdfsi>
 f90010c0:	00050613          	mv	a2,a0
@@ -1919,10 +1919,10 @@ f90010d8:	929ff0ef          	jal	f9000a00 <isp_set_color_balance>
 f90010dc:	00090513          	mv	a0,s2
 f90010e0:	979ff0ef          	jal	f9000a58 <isp_set_setpoint>
         bsp_printf("target exposure value: %d, red gain: %d, green gain: %d, blue gain: %d\r\n", e_raw, r_raw, g_raw, b_raw);
-f90010e4:	8581a703          	lw	a4,-1960(gp) # f9004e18 <b_raw.5>
-f90010e8:	85c1a683          	lw	a3,-1956(gp) # f9004e1c <g_raw.6>
-f90010ec:	8601a603          	lw	a2,-1952(gp) # f9004e20 <r_raw.7>
-f90010f0:	8641a583          	lw	a1,-1948(gp) # f9004e24 <e_raw.8>
+f90010e4:	8581a703          	lw	a4,-1960(gp) # f9004e20 <b_raw.5>
+f90010e8:	85c1a683          	lw	a3,-1956(gp) # f9004e24 <g_raw.6>
+f90010ec:	8601a603          	lw	a2,-1952(gp) # f9004e28 <r_raw.7>
+f90010f0:	8641a583          	lw	a1,-1948(gp) # f9004e2c <e_raw.8>
 f90010f4:	f9004537          	lui	a0,0xf9004
 f90010f8:	3f850513          	addi	a0,a0,1016 # f90043f8 <_data+0x168>
 f90010fc:	de9ff0ef          	jal	f9000ee4 <bsp_printf>
@@ -1934,9 +1934,9 @@ f900110c:	00012903          	lw	s2,0(sp)
 f9001110:	01010113          	addi	sp,sp,16
 f9001114:	00008067          	ret
     if (e_tmp != e_raw || r_tmp != r_raw || g_tmp != g_raw || b_tmp != b_raw) {
-f9001118:	85c1a783          	lw	a5,-1956(gp) # f9004e1c <g_raw.6>
+f9001118:	85c1a783          	lw	a5,-1956(gp) # f9004e24 <g_raw.6>
 f900111c:	f69794e3          	bne	a5,s1,f9001084 <poll_host_settings+0x50>
-f9001120:	8581a783          	lw	a5,-1960(gp) # f9004e18 <b_raw.5>
+f9001120:	8581a783          	lw	a5,-1960(gp) # f9004e20 <b_raw.5>
 f9001124:	f6a790e3          	bne	a5,a0,f9001084 <poll_host_settings+0x50>
 f9001128:	fd9ff06f          	j	f9001100 <poll_host_settings+0xcc>
         r = r > 0 ? r : 0;
@@ -1955,20 +1955,20 @@ f9001144:	ff010113          	addi	sp,sp,-16
 f9001148:	00112623          	sw	ra,12(sp)
 f900114c:	00812423          	sw	s0,8(sp)
     u32 new_gain = isp_update_gain(prev_dig_gain);
-f9001150:	8541d503          	lhu	a0,-1964(gp) # f9004e14 <prev_dig_gain.4>
+f9001150:	8541d503          	lhu	a0,-1964(gp) # f9004e1c <prev_dig_gain.4>
 f9001154:	8e1ff0ef          	jal	f9000a34 <isp_update_gain>
 f9001158:	00050413          	mv	s0,a0
     u32 exp_avg = isp_get_expose_avg();
 f900115c:	8c1ff0ef          	jal	f9000a1c <isp_get_expose_avg>
 f9001160:	00050593          	mv	a1,a0
     ++count;
-f9001164:	8501a783          	lw	a5,-1968(gp) # f9004e10 <count.3>
+f9001164:	8501a783          	lw	a5,-1968(gp) # f9004e18 <count.3>
 f9001168:	00178793          	addi	a5,a5,1
-f900116c:	84f1a823          	sw	a5,-1968(gp) # f9004e10 <count.3>
+f900116c:	84f1a823          	sw	a5,-1968(gp) # f9004e18 <count.3>
     if (count >= 10 || abs(prev_dig_gain - new_gain) > 10) {
 f9001170:	00900713          	li	a4,9
 f9001174:	02f76063          	bltu	a4,a5,f9001194 <timer_handler+0x50>
-f9001178:	8541d783          	lhu	a5,-1964(gp) # f9004e14 <prev_dig_gain.4>
+f9001178:	8541d783          	lhu	a5,-1964(gp) # f9004e1c <prev_dig_gain.4>
 f900117c:	408787b3          	sub	a5,a5,s0
 f9001180:	41f7d713          	srai	a4,a5,0x1f
 f9001184:	00f747b3          	xor	a5,a4,a5
@@ -1977,12 +1977,12 @@ f900118c:	00a00713          	li	a4,10
 f9001190:	00f75e63          	bge	a4,a5,f90011ac <timer_handler+0x68>
         bsp_printf("global average: %d, gain: %d, new gain: %d\r\n", exp_avg, prev_dig_gain, new_gain);
 f9001194:	00040693          	mv	a3,s0
-f9001198:	8541d603          	lhu	a2,-1964(gp) # f9004e14 <prev_dig_gain.4>
+f9001198:	8541d603          	lhu	a2,-1964(gp) # f9004e1c <prev_dig_gain.4>
 f900119c:	f9004537          	lui	a0,0xf9004
 f90011a0:	44450513          	addi	a0,a0,1092 # f9004444 <_data+0x1b4>
 f90011a4:	d41ff0ef          	jal	f9000ee4 <bsp_printf>
         count = 0;
-f90011a8:	8401a823          	sw	zero,-1968(gp) # f9004e10 <count.3>
+f90011a8:	8401a823          	sw	zero,-1968(gp) # f9004e18 <count.3>
     PiCam_Gainfilter(ana_gain, new_gain);
 f90011ac:	01041413          	slli	s0,s0,0x10
 f90011b0:	01045413          	srli	s0,s0,0x10
@@ -1990,7 +1990,7 @@ f90011b4:	00040593          	mv	a1,s0
 f90011b8:	21c00513          	li	a0,540
 f90011bc:	6c4000ef          	jal	f9001880 <PiCam_Gainfilter>
     prev_dig_gain = new_gain;
-f90011c0:	84819a23          	sh	s0,-1964(gp) # f9004e14 <prev_dig_gain.4>
+f90011c0:	84819a23          	sh	s0,-1964(gp) # f9004e1c <prev_dig_gain.4>
     poll_host_settings();
 f90011c4:	e71ff0ef          	jal	f9001034 <poll_host_settings>
 }
@@ -2225,7 +2225,7 @@ f9001448:	00241793          	slli	a5,s0,0x2
 f900144c:	008787b3          	add	a5,a5,s0
 f9001450:	00279513          	slli	a0,a5,0x2
 f9001454:	f90057b7          	lui	a5,0xf9005
-f9001458:	d9478793          	addi	a5,a5,-620 # f9004d94 <pixelFormat>
+f9001458:	d9c78793          	addi	a5,a5,-612 # f9004d9c <pixelFormat>
 f900145c:	00a78533          	add	a0,a5,a0
 f9001460:	889ff0ef          	jal	f9000ce8 <bsp_printf_s>
     	bsp_printf("\r\n");
@@ -2248,17 +2248,17 @@ f900148c:	02112e23          	sw	ra,60(sp)
     input = uart_read(BSP_UART_TERMINAL);
 f9001490:	f8010537          	lui	a0,0xf8010
 f9001494:	ea4ff0ef          	jal	f9000b38 <uart_read>
-f9001498:	84a18623          	sb	a0,-1972(gp) # f9004e0c <input.1>
+f9001498:	84a18623          	sb	a0,-1972(gp) # f9004e14 <input.1>
     fun_num = input - '0';
 f900149c:	fd050513          	addi	a0,a0,-48 # f800ffd0 <__stack_size+0xf800efd0>
-f90014a0:	80a1a823          	sw	a0,-2032(gp) # f9004dd0 <fun_num.0>
+f90014a0:	80a1a823          	sw	a0,-2032(gp) # f9004dd8 <fun_num.0>
     if ((fun_num >= 0 && fun_num <= 9) && (fun_num < sizeof(videoParams)/sizeof(videoParams[0]))) {
 f90014a4:	00500793          	li	a5,5
 f90014a8:	02a7f263          	bgeu	a5,a0,f90014cc <console_main+0x44>
     fun_num = input - 'a';
-f90014ac:	84c1c783          	lbu	a5,-1972(gp) # f9004e0c <input.1>
+f90014ac:	84c1c783          	lbu	a5,-1972(gp) # f9004e14 <input.1>
 f90014b0:	f9f78793          	addi	a5,a5,-97
-f90014b4:	80f1a823          	sw	a5,-2032(gp) # f9004dd0 <fun_num.0>
+f90014b4:	80f1a823          	sw	a5,-2032(gp) # f9004dd8 <fun_num.0>
     if ((fun_num >= 0 && fun_num <= 9) && (fun_num < sizeof(pixelFormat)/sizeof(pixelFormat[0]))) {
 f90014b8:	00200713          	li	a4,2
 f90014bc:	12f77e63          	bgeu	a4,a5,f90015f8 <console_main+0x170>
@@ -2274,7 +2274,7 @@ f90014d8:	f9004537          	lui	a0,0xf9004
 f90014dc:	58450513          	addi	a0,a0,1412 # f9004584 <_data+0x2f4>
 f90014e0:	a05ff0ef          	jal	f9000ee4 <bsp_printf>
         bsp_printf(videoParams[fun_num].description);
-f90014e4:	8101a703          	lw	a4,-2032(gp) # f9004dd0 <fun_num.0>
+f90014e4:	8101a703          	lw	a4,-2032(gp) # f9004dd8 <fun_num.0>
 f90014e8:	f90047b7          	lui	a5,0xf9004
 f90014ec:	69478413          	addi	s0,a5,1684 # f9004694 <videoParams>
 f90014f0:	02c00913          	li	s2,44
@@ -2291,7 +2291,7 @@ f9001510:	00000593          	li	a1,0
 f9001514:	01300513          	li	a0,19
 f9001518:	d65ff0ef          	jal	f900127c <interrupt_set>
         update_video_timing(videoParams[fun_num].timing);
-f900151c:	8101a783          	lw	a5,-2032(gp) # f9004dd0 <fun_num.0>
+f900151c:	8101a783          	lw	a5,-2032(gp) # f9004dd8 <fun_num.0>
 f9001520:	032787b3          	mul	a5,a5,s2
 f9001524:	00f407b3          	add	a5,s0,a5
 f9001528:	0007ae03          	lw	t3,0(a5)
@@ -2317,7 +2317,7 @@ f9001574:	02f12223          	sw	a5,36(sp)
 f9001578:	00010513          	mv	a0,sp
 f900157c:	ff1fe0ef          	jal	f900056c <update_video_timing>
         switch(fun_num) {
-f9001580:	8101a783          	lw	a5,-2032(gp) # f9004dd0 <fun_num.0>
+f9001580:	8101a783          	lw	a5,-2032(gp) # f9004dd8 <fun_num.0>
 f9001584:	00300713          	li	a4,3
 f9001588:	02f74e63          	blt	a4,a5,f90015c4 <console_main+0x13c>
 f900158c:	00200713          	li	a4,2
@@ -2363,12 +2363,12 @@ f90015fc:	f9004537          	lui	a0,0xf9004
 f9001600:	58450513          	addi	a0,a0,1412 # f9004584 <_data+0x2f4>
 f9001604:	8e1ff0ef          	jal	f9000ee4 <bsp_printf>
         bsp_printf(pixelFormat[fun_num]);
-f9001608:	8101a703          	lw	a4,-2032(gp) # f9004dd0 <fun_num.0>
+f9001608:	8101a703          	lw	a4,-2032(gp) # f9004dd8 <fun_num.0>
 f900160c:	00271793          	slli	a5,a4,0x2
 f9001610:	00e787b3          	add	a5,a5,a4
 f9001614:	00279793          	slli	a5,a5,0x2
 f9001618:	f9005537          	lui	a0,0xf9005
-f900161c:	d9450513          	addi	a0,a0,-620 # f9004d94 <pixelFormat>
+f900161c:	d9c50513          	addi	a0,a0,-612 # f9004d9c <pixelFormat>
 f9001620:	00f50533          	add	a0,a0,a5
 f9001624:	8c1ff0ef          	jal	f9000ee4 <bsp_printf>
         bsp_printf("\r\n\r\n");
@@ -2376,7 +2376,7 @@ f9001628:	f9004537          	lui	a0,0xf9004
 f900162c:	59050513          	addi	a0,a0,1424 # f9004590 <_data+0x300>
 f9001630:	8b5ff0ef          	jal	f9000ee4 <bsp_printf>
         switch(fun_num) {
-f9001634:	8101a503          	lw	a0,-2032(gp) # f9004dd0 <fun_num.0>
+f9001634:	8101a503          	lw	a0,-2032(gp) # f9004dd8 <fun_num.0>
 f9001638:	00200793          	li	a5,2
 f900163c:	00a7ec63          	bltu	a5,a0,f9001654 <console_main+0x1cc>
                 write_apb_reg(fun_num, REG_PIXEL_MODE);
@@ -2741,7 +2741,7 @@ f90018f8:	00000413          	li	s0,0
 f90018fc:	0280006f          	j	f9001924 <PiCamV3_init+0x40>
 f9001900:	f90057b7          	lui	a5,0xf9005
 f9001904:	00241713          	slli	a4,s0,0x2
-f9001908:	bf878793          	addi	a5,a5,-1032 # f9004bf8 <im900_common_regs_x20_1>
+f9001908:	c0078793          	addi	a5,a5,-1024 # f9004c00 <im900_common_regs_x20_1>
 f900190c:	00e787b3          	add	a5,a5,a4
     PiCam_WriteRegData(0x10, reg, data);
 f9001910:	0027c603          	lbu	a2,2(a5)
@@ -2764,7 +2764,7 @@ f9001944:	00000413          	li	s0,0
 f9001948:	0280006f          	j	f9001970 <PiCamV3_init+0x8c>
 f900194c:	f90057b7          	lui	a5,0xf9005
 f9001950:	00241713          	slli	a4,s0,0x2
-f9001954:	bb878793          	addi	a5,a5,-1096 # f9004bb8 <im900_common_regs_x34_2>
+f9001954:	bc078793          	addi	a5,a5,-1088 # f9004bc0 <im900_common_regs_x34_2>
 f9001958:	00e787b3          	add	a5,a5,a4
     PiCam_WriteRegData(PI_CAM_V3_ADDR, reg, data);
 f900195c:	0027c603          	lbu	a2,2(a5)
@@ -2780,7 +2780,7 @@ f9001978:	00000413          	li	s0,0
 f900197c:	0280006f          	j	f90019a4 <PiCamV3_init+0xc0>
 f9001980:	f90057b7          	lui	a5,0xf9005
 f9001984:	00241713          	slli	a4,s0,0x2
-f9001988:	b9078793          	addi	a5,a5,-1136 # f9004b90 <im900_common_regs_x34_4>
+f9001988:	b9878793          	addi	a5,a5,-1128 # f9004b98 <im900_common_regs_x34_4>
 f900198c:	00e787b3          	add	a5,a5,a4
     PiCam_WriteRegData(PI_CAM_V3_ADDR, reg, data);
 f9001990:	0027c603          	lbu	a2,2(a5)
@@ -2842,7 +2842,7 @@ f9001a20:	00000413          	li	s0,0
 f9001a24:	fedff06f          	j	f9001a10 <PiCamV3_init+0x12c>
 			WRITE_REGS(link_453Mhz_regs);
 f9001a28:	00241713          	slli	a4,s0,0x2
-f9001a2c:	83818793          	addi	a5,gp,-1992 # f9004df8 <link_453Mhz_regs>
+f9001a2c:	83818793          	addi	a5,gp,-1992 # f9004e00 <link_453Mhz_regs>
 f9001a30:	00e787b3          	add	a5,a5,a4
     PiCam_WriteRegData(PI_CAM_V3_ADDR, reg, data);
 f9001a34:	0027c603          	lbu	a2,2(a5)
@@ -2866,7 +2866,7 @@ f9001a6c:	01a00513          	li	a0,26
 f9001a70:	d2dff0ef          	jal	f900179c <PiCam_WriteRegData>
 			WRITE_REGS_1A(imx900_regs_0);
 f9001a74:	00140413          	addi	s0,s0,1
-f9001a78:	01b00793          	li	a5,27
+f9001a78:	01d00793          	li	a5,29
 f9001a7c:	fc87fce3          	bgeu	a5,s0,f9001a54 <PiCamV3_init+0x170>
 			bsp_uDelay(1000*1000);
 f9001a80:	f8b00637          	lui	a2,0xf8b00
@@ -3262,7 +3262,7 @@ f9001ec0:	02000713          	li	a4,32
 f9001ec4:	fed762e3          	bltu	a4,a3,f9001ea8 <bsp_printf+0xe4>
 f9001ec8:	00269793          	slli	a5,a3,0x2
 f9001ecc:	f9005737          	lui	a4,0xf9005
-f9001ed0:	c1070713          	addi	a4,a4,-1008 # f9004c10 <im900_common_regs_x20_1+0x18>
+f9001ed0:	c1870713          	addi	a4,a4,-1000 # f9004c18 <im900_common_regs_x20_1+0x18>
 f9001ed4:	00e787b3          	add	a5,a5,a4
 f9001ed8:	0007a783          	lw	a5,0(a5)
 f9001edc:	00078067          	jr	a5
@@ -3524,7 +3524,7 @@ f90021ac:	7ff00713          	li	a4,2047
 f90021b0:	00040e13          	mv	t3,s0
 f90021b4:	2ae78663          	beq	a5,a4,f9002460 <__adddf3+0x41c>
 f90021b8:	ff800737          	lui	a4,0xff800
-f90021bc:	fff70713          	addi	a4,a4,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa1af>
+f90021bc:	fff70713          	addi	a4,a4,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa19f>
 f90021c0:	00e9f733          	and	a4,s3,a4
 f90021c4:	7ff7f793          	andi	a5,a5,2047
 f90021c8:	01d71813          	slli	a6,a4,0x1d
@@ -3611,7 +3611,7 @@ f9002308:	00190913          	addi	s2,s2,1
 f900230c:	7ff00793          	li	a5,2047
 f9002310:	36f90c63          	beq	s2,a5,f9002688 <__adddf3+0x644>
 f9002314:	ff8007b7          	lui	a5,0xff800
-f9002318:	fff78793          	addi	a5,a5,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa1af>
+f9002318:	fff78793          	addi	a5,a5,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa19f>
 f900231c:	0014f613          	andi	a2,s1,1
 f9002320:	00f9f7b3          	and	a5,s3,a5
 f9002324:	0014d713          	srli	a4,s1,0x1
@@ -3653,7 +3653,7 @@ f90023b0:	00871613          	slli	a2,a4,0x8
 f90023b4:	00058493          	mv	s1,a1
 f90023b8:	52065e63          	bgez	a2,f90028f4 <__adddf3+0x8b0>
 f90023bc:	ff8007b7          	lui	a5,0xff800
-f90023c0:	fff78793          	addi	a5,a5,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa1af>
+f90023c0:	fff78793          	addi	a5,a5,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa19f>
 f90023c4:	00f77733          	and	a4,a4,a5
 f90023c8:	00068e13          	mv	t3,a3
 f90023cc:	00100793          	li	a5,1
@@ -3767,7 +3767,7 @@ f9002578:	00871793          	slli	a5,a4,0x8
 f900257c:	00040e13          	mv	t3,s0
 f9002580:	3407de63          	bgez	a5,f90028dc <__adddf3+0x898>
 f9002584:	ff8007b7          	lui	a5,0xff800
-f9002588:	fff78793          	addi	a5,a5,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa1af>
+f9002588:	fff78793          	addi	a5,a5,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa19f>
 f900258c:	00f77733          	and	a4,a4,a5
 f9002590:	01d71793          	slli	a5,a4,0x1d
 f9002594:	00375713          	srli	a4,a4,0x3
@@ -3797,7 +3797,7 @@ f90025f0:	00800637          	lui	a2,0x800
 f90025f4:	00c76733          	or	a4,a4,a2
 f90025f8:	c4dff06f          	j	f9002244 <__adddf3+0x200>
 f90025fc:	ff8009b7          	lui	s3,0xff800
-f9002600:	fff98993          	addi	s3,s3,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa1af>
+f9002600:	fff98993          	addi	s3,s3,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa19f>
 f9002604:	40f90933          	sub	s2,s2,a5
 f9002608:	013779b3          	and	s3,a4,s3
 f900260c:	b71ff06f          	j	f900217c <__adddf3+0x138>
@@ -3813,7 +3813,7 @@ f9002630:	01e03633          	snez	a2,t5
 f9002634:	00d66633          	or	a2,a2,a3
 f9002638:	ac9ff06f          	j	f9002100 <__adddf3+0xbc>
 f900263c:	ff8006b7          	lui	a3,0xff800
-f9002640:	fff68693          	addi	a3,a3,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa1af>
+f9002640:	fff68693          	addi	a3,a3,-1 # ff7fffff <__freertos_irq_stack_top+0x67fa19f>
 f9002644:	40f907b3          	sub	a5,s2,a5
 f9002648:	00d77733          	and	a4,a4,a3
 f900264c:	01d71813          	slli	a6,a4,0x1d
@@ -4267,7 +4267,7 @@ f9002d40:	00070a13          	mv	s4,a4
 f9002d44:	00749793          	slli	a5,s1,0x7
 f9002d48:	0007da63          	bgez	a5,f9002d5c <__muldf3+0x450>
 f9002d4c:	ff0007b7          	lui	a5,0xff000
-f9002d50:	fff78793          	addi	a5,a5,-1 # feffffff <__freertos_irq_stack_top+0x5ffa1af>
+f9002d50:	fff78793          	addi	a5,a5,-1 # feffffff <__freertos_irq_stack_top+0x5ffa19f>
 f9002d54:	00f4f4b3          	and	s1,s1,a5
 f9002d58:	40088613          	addi	a2,a7,1024
 f9002d5c:	7fe00793          	li	a5,2046
@@ -4614,7 +4614,7 @@ f9003294:	0ff00693          	li	a3,255
 f9003298:	00040893          	mv	a7,s0
 f900329c:	0ed78463          	beq	a5,a3,f9003384 <__addsf3+0x264>
 f90032a0:	fc0006b7          	lui	a3,0xfc000
-f90032a4:	fff68693          	addi	a3,a3,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f90032a4:	fff68693          	addi	a3,a3,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f90032a8:	00d776b3          	and	a3,a4,a3
 f90032ac:	0ff7f513          	zext.b	a0,a5
 f90032b0:	00669693          	slli	a3,a3,0x6
@@ -4642,7 +4642,7 @@ f9003304:	40ee06b3          	sub	a3,t3,a4
 f9003308:	00569713          	slli	a4,a3,0x5
 f900330c:	2c075863          	bgez	a4,f90035dc <__addsf3+0x4bc>
 f9003310:	fc0007b7          	lui	a5,0xfc000
-f9003314:	fff78793          	addi	a5,a5,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f9003314:	fff78793          	addi	a5,a5,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f9003318:	00f6f6b3          	and	a3,a3,a5
 f900331c:	00058893          	mv	a7,a1
 f9003320:	00100513          	li	a0,1
@@ -4687,7 +4687,7 @@ f90033b8:	18d30e63          	beq	t1,a3,f9003554 <__addsf3+0x434>
 f90033bc:	00078313          	mv	t1,a5
 f90033c0:	12c0006f          	j	f90034ec <__addsf3+0x3cc>
 f90033c4:	fc000737          	lui	a4,0xfc000
-f90033c8:	fff70713          	addi	a4,a4,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f90033c8:	fff70713          	addi	a4,a4,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f90033cc:	00e4f733          	and	a4,s1,a4
 f90033d0:	40a90933          	sub	s2,s2,a0
 f90033d4:	00412483          	lw	s1,4(sp)
@@ -5282,7 +5282,7 @@ f9003ce4:	00140413          	addi	s0,s0,1
 f9003ce8:	0ff00713          	li	a4,255
 f9003cec:	f4e400e3          	beq	s0,a4,f9003c2c <__subsf3+0xbc>
 f9003cf0:	fc000637          	lui	a2,0xfc000
-f9003cf4:	fff60613          	addi	a2,a2,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f9003cf4:	fff60613          	addi	a2,a2,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f9003cf8:	00c7f633          	and	a2,a5,a2
 f9003cfc:	0ff47513          	zext.b	a0,s0
 f9003d00:	00661613          	slli	a2,a2,0x6
@@ -5354,13 +5354,13 @@ f9003e04:	40fe0633          	sub	a2,t3,a5
 f9003e08:	00561793          	slli	a5,a2,0x5
 f9003e0c:	2207d463          	bgez	a5,f9004034 <__subsf3+0x4c4>
 f9003e10:	fc0007b7          	lui	a5,0xfc000
-f9003e14:	fff78793          	addi	a5,a5,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f9003e14:	fff78793          	addi	a5,a5,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f9003e18:	00f67633          	and	a2,a2,a5
 f9003e1c:	00088493          	mv	s1,a7
 f9003e20:	00100513          	li	a0,1
 f9003e24:	eddff06f          	j	f9003d00 <__subsf3+0x190>
 f9003e28:	fc0007b7          	lui	a5,0xfc000
-f9003e2c:	fff78793          	addi	a5,a5,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f9003e2c:	fff78793          	addi	a5,a5,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f9003e30:	00f977b3          	and	a5,s2,a5
 f9003e34:	40a40433          	sub	s0,s0,a0
 f9003e38:	00012903          	lw	s2,0(sp)
@@ -5577,7 +5577,7 @@ f9004170:	06f74463          	blt	a4,a5,f90041d8 <__floatunsisf+0xe8>
 f9004174:	ffb50713          	addi	a4,a0,-5
 f9004178:	00e41733          	sll	a4,s0,a4
 f900417c:	fc0006b7          	lui	a3,0xfc000
-f9004180:	fff68693          	addi	a3,a3,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa1af>
+f9004180:	fff68693          	addi	a3,a3,-1 # fbffffff <__freertos_irq_stack_top+0x2ffa19f>
 f9004184:	00777613          	andi	a2,a4,7
 f9004188:	00d77433          	and	s0,a4,a3
 f900418c:	02060463          	beqz	a2,f90041b4 <__floatunsisf+0xc4>
@@ -5622,7 +5622,7 @@ f900421c:	02000713          	li	a4,32
 f9004220:	40f70733          	sub	a4,a4,a5
 f9004224:	00f55533          	srl	a0,a0,a5
 f9004228:	00001797          	auipc	a5,0x1
-f900422c:	a6c78793          	addi	a5,a5,-1428 # f9004c94 <__clz_tab>
+f900422c:	a7478793          	addi	a5,a5,-1420 # f9004c9c <__clz_tab>
 f9004230:	00a787b3          	add	a5,a5,a0
 f9004234:	0007c503          	lbu	a0,0(a5)
 f9004238:	40a70533          	sub	a0,a4,a0
@@ -5632,7 +5632,7 @@ f9004244:	02f57463          	bgeu	a0,a5,f900426c <__clzsi2+0x64>
 f9004248:	01000793          	li	a5,16
 f900424c:	00f55533          	srl	a0,a0,a5
 f9004250:	00001797          	auipc	a5,0x1
-f9004254:	a4478793          	addi	a5,a5,-1468 # f9004c94 <__clz_tab>
+f9004254:	a4c78793          	addi	a5,a5,-1460 # f9004c9c <__clz_tab>
 f9004258:	00a787b3          	add	a5,a5,a0
 f900425c:	0007c503          	lbu	a0,0(a5)
 f9004260:	01000713          	li	a4,16
@@ -5641,7 +5641,7 @@ f9004268:	00008067          	ret
 f900426c:	01800793          	li	a5,24
 f9004270:	00f55533          	srl	a0,a0,a5
 f9004274:	00001797          	auipc	a5,0x1
-f9004278:	a2078793          	addi	a5,a5,-1504 # f9004c94 <__clz_tab>
+f9004278:	a2878793          	addi	a5,a5,-1496 # f9004c9c <__clz_tab>
 f900427c:	00a787b3          	add	a5,a5,a0
 f9004280:	0007c503          	lbu	a0,0(a5)
 f9004284:	00800713          	li	a4,8

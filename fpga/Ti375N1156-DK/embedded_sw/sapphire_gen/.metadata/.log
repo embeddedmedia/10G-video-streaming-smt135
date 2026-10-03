@@ -397,3 +397,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_
 
 !ENTRY org.eclipse.embedcdt.managedbuild.cross.riscv.core 4 1 2026-10-03 19:17:55.335
 !MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.managedbuild.cross.riscv.core 4 1 2026-10-03 21:58:10.002
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.managedbuild.cross.riscv.core 4 1 2026-10-03 21:59:29.734
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.managedbuild.cross.riscv.core 4 1 2026-10-03 21:59:56.605
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx

@@ -1,12 +1,12 @@
-19:16:40 **** Incremental Build of configuration Default for project app ****
+21:59:18 **** Incremental Build of configuration Default for project app ****
 make all 
 CC src/PiCamV3.c
 LD app
 Memory region         Used Size  Region Size  %age Used
-             ram:       24144 B        32 KB     73.68%
-19:16:56 **** Incremental Build of configuration Default for project app ****
+             ram:       24160 B        32 KB     73.73%
+21:59:28 **** Incremental Build of configuration Default for project app ****
 make all 
 make: Nothing to be done for 'all'.
-19:17:54 **** Incremental Build of configuration Default for project app ****
+21:59:55 **** Incremental Build of configuration Default for project app ****
 make all 
 make: Nothing to be done for 'all'.

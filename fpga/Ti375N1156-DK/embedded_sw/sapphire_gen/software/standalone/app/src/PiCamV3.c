@@ -4,7 +4,8 @@
 #include "PiCamV3.h"
 
 #define PI_CAM_V3_ADDR              0x1a
-#define IMX900_ADDR
+#define IMX900_SENS_ADDR			0x1A
+#define MODULE_CTRL_ADDR			0x10
 
 #define IMX708_REG_MODE_SELECT		0x0100
 #define IMX708_MODE_STANDBY		0x00
@@ -223,6 +224,8 @@ static const i2c_reg imx900_regs_0[] = {
 		{0x30EA, 0x00},
 		{0x30EB, 0x00},
 		{0x3000, 0x00},
+		{0x307C, 0x01},
+		{0x307D, 0x01},
 };
 
 static const i2c_reg imx900_regs_1[] = {
