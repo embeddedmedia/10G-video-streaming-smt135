@@ -1,0 +1,170 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+                              build/obj_files/start.o (__libc_init_array)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+start            0x00000000f9000000 0x0000000000000200 axwl !r
+ram              0x00000000f9007800 0x0000000000000800 axwl !r
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/obj_files/main.o
+LOAD build/obj_files/start.o
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+                0x0000000000000080                __stack_size = DEFINED (__stack_size)?__stack_size:0x80
+
+.start          0x00000000f9000000       0x60
+ *start.o(.init)
+ .init          0x00000000f9000000       0x60 build/obj_files/start.o
+                0x00000000f9000000                _start
+                0x00000000f900005c                _init
+ *start.o(*)
+ .text          0x00000000f9000060        0x0 build/obj_files/start.o
+ .data          0x00000000f9000060        0x0 build/obj_files/start.o
+ .bss           0x00000000f9000060        0x0 build/obj_files/start.o
+
+.init
+ *(SORT_NONE(.init))
+
+.text           0x00000000f9007800      0x340
+ *(.text.unlikely .text.unlikely.*)
+ *(.text.startup .text.startup.*)
+ .text.startup  0x00000000f9007800        0x4 build/obj_files/main.o
+                0x00000000f9007800                main
+ *(.text)
+ .text          0x00000000f9007804      0x33c build/obj_files/main.o
+                0x00000000f900792c                bspMain
+ .text          0x00000000f9007b40        0x0 /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+ *(.gnu.linkonce.t.*)
+ *(.note.gnu.build-id)
+
+.text.__libc_init_array
+                0x00000000f9007b40       0x94
+ .text.__libc_init_array
+                0x00000000f9007b40       0x94 /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+                0x00000000f9007b40                __libc_init_array
+
+.rela.dyn       0x00000000f9007bd4        0x0
+ .rela.init     0x00000000f9007bd4        0x0 build/obj_files/main.o
+ .rela.text.__libc_init_array
+                0x00000000f9007bd4        0x0 build/obj_files/main.o
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x00000000f9007bd4                . = ALIGN (0x4)
+
+.preinit_array  0x00000000f9007bd4        0x0
+                0x00000000f9007bd4                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000f9007bd4                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000f9007bd4        0x0
+                0x00000000f9007bd4                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000f9007bd4                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000f9007bd4        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.lalign         0x00000000f9007bd4        0x0
+                0x00000000f9007bd4                PROVIDE (_data_lma = .)
+
+.dalign         0x00000000f9007bd4        0x0
+                0x00000000f9007bd4                PROVIDE (_data = .)
+
+.data           0x00000000f9007bd4       0x2e
+ *(.rdata)
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x00000000f9007bd4       0x24 build/obj_files/main.o
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ .data          0x00000000f9007bf8        0x0 build/obj_files/main.o
+ .data          0x00000000f9007bf8        0x0 /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+ *(.gnu.linkonce.d.*)
+                0x00000000f9007bf8                . = ALIGN (0x8)
+ *fill*         0x00000000f9007bf8        0x0 
+                0x00000000f90083e8                PROVIDE (__global_pointer$ = (. + 0x7f0))
+ *(.sdata .sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x00000000f9007bf8                . = ALIGN (0x8)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+                0x00000000f9007c02                . = (. + 0xa)
+ *fill*         0x00000000f9007bf8        0xa 
+                0x00000000f9007c04                . = ALIGN (0x4)
+                0x00000000f9007c04                PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                [!provide]                        PROVIDE (_fbss = .)
+                0x00000000f9007c04                PROVIDE (__bss_start = .)
+
+.bss            0x00000000f9007c02        0x2
+ *(.sbss*)
+ *(.gnu.linkonce.sb.*)
+ *(.bss .bss.*)
+ .bss           0x00000000f9007c02        0x0 build/obj_files/main.o
+ .bss           0x00000000f9007c02        0x0 /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x00000000f9007c04                . = ALIGN (0x4)
+ *fill*         0x00000000f9007c02        0x2 
+                0x00000000f9007c08                . = ALIGN (0x8)
+                0x00000000f9007c08                PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x00000000f9007c10                . = ALIGN (0x10)
+
+.stack          0x00000000f9007c04       0x80
+                [!provide]                        PROVIDE (_heap_end = .)
+                0x0000000000000080                . = __stack_size
+ *fill*         0x00000000f9007c04       0x80 
+                0x00000000f9007c84                PROVIDE (_sp = .)
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libm.a
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+START GROUP
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libg.a
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a
+END GROUP
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+START GROUP
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a
+LOAD /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libnosys.a
+END GROUP
+OUTPUT(build/bootloader.elf elf32-littleriscv)
+
+.comment        0x0000000000000000       0x33
+ .comment       0x0000000000000000       0x33 build/obj_files/main.o
+                                         0x34 (size before relaxing)
+
+.debug_frame    0x0000000000000000       0x3c
+ .debug_frame   0x0000000000000000       0x3c /home/kenny/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)

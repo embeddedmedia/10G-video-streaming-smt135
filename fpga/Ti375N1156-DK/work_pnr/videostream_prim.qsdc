@@ -1,0 +1,16 @@
+
+@
+pll_inst1_CLKOUT0N*
+pll_inst1_CLKOUT0INPAD0Jn JF 
+.
+clk_100mN*
+clk_100mINPAD0Jn JF 
+>
+dphy_rx1_SLOWCLK€}*
+dphy_rx1_SLOWCLKINPAD0Jn JF 
+:
+sfp0_iface_clk€2*
+sfp0_iface_clkINPAD0Jn JF 
+clk_100m
+pll_inst1_CLKOUT0
+dphy_rx1_SLOWCLK

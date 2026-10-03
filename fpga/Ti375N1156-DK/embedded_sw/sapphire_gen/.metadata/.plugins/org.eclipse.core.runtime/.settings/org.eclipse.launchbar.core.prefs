@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:launch_config_generator,org.eclipse.launchbar.core.descriptorType.default\:app_softTap,org.eclipse.launchbar.core.descriptorType.default\:app_ti,org.eclipse.launchbar.core.descriptorType.default\:app_trion,org.eclipse.launchbar.core.descriptorType.default\:app_tz,org.eclipse.launchbar.core.descriptorType.default\:co_debug_app_group,org.eclipse.launchbar.core.descriptorType.default\:co_debug_register,org.eclipse.launchbar.core.descriptorType.default\:co_debug_app_attach,org.eclipse.launchbar.core.descriptorType.default\:co_debug_deregister
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:co_debug_app_attach/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:co_debug_app_group/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:co_debug_deregister/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:co_debug_register/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:launch_config_generator/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:launch_config_generator/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

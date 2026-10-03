@@ -1,0 +1,35 @@
+{
+    "args": [
+        "-o",
+        "mac10gbe",
+        "--base_path",
+        "ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "ethernet",
+            "name": "efx_mac10gbe",
+            "version": "1.5"
+        }
+    ],
+    "conf": {
+        "CUT_THRU_STORE_FWD": "1'b1",
+        "INTER_PACKET_GAP": "4'd12",
+        "MTU_FRAME_LENGTH": "15'd9000",
+        "MAC_SOURCE_ADDRESS": "48'd0",
+        "ENABLE_BROADCAST_FILTER": "1'b0",
+        "REG_WIDTH": "6'd32",
+        "TXFIFO_DEPTH": "512",
+        "AXIS_DATA_WIDTH": "64",
+        "DETECT_LINK_FAULT": "1'b1",
+        "OPTIMIZE_TIMING": "1'b1",
+        "TX_PKT_CNT_DW": "4'd3",
+        "PORT_SOURCE_ADDRESS": "1'b0"
+    },
+    "output": {
+        "external_source_source": []
+    },
+    "ooc_synthesis": {},
+    "sw_version": "2026.1.132.4.5",
+    "external_path_option": "RELATIVE_PATH"
+}

@@ -1,0 +1,34 @@
+CellDelayOverride {
+  Cell: "pll_inst1~PLL"
+  DelayOverride {
+    from: "CLKIN[0]"
+    to: "CLKOUT0"
+    Type: "CLK_TO_Q"
+    value_min: -1145
+    value_max: -1769
+  }
+  DelayOverride {
+    from: "CLKIN[0]"
+    to: "CLKOUT1"
+    Type: "CLK_TO_Q"
+    value_min: -1145
+    value_max: -1769
+  }
+}
+CellDelayOverride {
+  Cell: "pll_inst2~PLL"
+  DelayOverride {
+    from: "CLKIN[1]"
+    to: "CLKOUT0"
+    Type: "CLK_TO_Q"
+    value_min: 0
+    value_max: 0
+  }
+  DelayOverride {
+    from: "CLKIN[1]"
+    to: "CLKOUT3"
+    Type: "CLK_TO_Q"
+    value_min: 0
+    value_max: 0
+  }
+}

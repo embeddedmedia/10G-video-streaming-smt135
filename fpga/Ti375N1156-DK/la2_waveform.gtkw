@@ -1,0 +1,12 @@
+[dumpfile] "/tmp/tmpu193k52o/la2tmp_continous.vcd"
+[dumpfile_mtime] "Mon Sep 21 15:55:05 2026"
+[dumpfile_size] 208
+[savefile] "/home/steve/video_streaming_10g_demo_v1.4.1/fpga/Ti375N1156-DK/la2_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 512 1536 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.inst_udp_video_generator/u0_cfg_fsm/ddr_phy_rstn

@@ -1,0 +1,178 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 14:47:12
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 15:26:48
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 17:15:45
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 20:05:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 20:45:05
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 20:55:56
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 21:25:50
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 22:03:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 20, 2026 22:33:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 18:54:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 20:32:30
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 22:35:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tdi' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:377)
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tms' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:378)
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tck' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:379)
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tdo' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:380)
+[EFX-0021 ERROR] Elaboration of module 'fpga' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 22:46:49
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tdi' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:377)
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tms' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:378)
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tck' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:379)
+[EFX-0010 VERI-ERROR] cannot find port 'io_jtag_tdo' on this module (VERI-1010) (/home/steve/video_streaming_10g_demo_v1.4.1/rtl/fpga.sv:380)
+[EFX-0021 ERROR] Elaboration of module 'fpga' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 22:48:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 23:14:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 21, 2026 23:44:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 22, 2026 00:03:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 22, 2026 00:27:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 22, 2026 01:32:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 22, 2026 01:38:10
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 25, 2026 13:02:18
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 25, 2026 13:54:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 26, 2026 12:32:03
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 29, 2026 00:06:02
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 29, 2026 00:21:55
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 29, 2026 00:35:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Oct 03, 2026 18:27:18
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Oct 03, 2026 18:46:19
+///////////////////////////////////
+

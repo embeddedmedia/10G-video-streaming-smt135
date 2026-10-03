@@ -1,0 +1,24 @@
+21:04:01 **** Build of configuration Default for project app ****
+make all 
+CC src/apb3reg.c
+CC src/common.c
+CC src/isp.c
+CC src/main.c
+CC src/peri.c
+CC src/PiCamDriver.c
+CC src/PiCamV3.c
+CC src/timer.c
+CC ../common/start.S
+CC ../common/trap.S
+LD app
+Memory region         Used Size  Region Size  %age Used
+             ram:       22976 B        32 KB     70.12%
+23:08:01 **** Incremental Build of configuration Default for project app ****
+make all 
+make: Nothing to be done for 'all'.
+23:10:24 **** Incremental Build of configuration Default for project app ****
+make all 
+make: Nothing to be done for 'all'.
+23:13:08 **** Incremental Build of configuration Default for project app ****
+make all 
+make: Nothing to be done for 'all'.

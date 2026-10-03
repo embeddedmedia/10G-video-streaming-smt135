@@ -1,0 +1,33 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2026.1.132.4.5 
+Date: Sat Oct  3 18:57:01 2026
+
+Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti135N676
+Top-level Entity Name: videostream
+Elapsed time for routing: 0 hours 0 minutes 37 seconds
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++-----------------------------------------------------+----------+----------+
+|                      Clock Net                      | GBUFCE_X | GBUFCE_Y |
++-----------------------------------------------------+----------+----------+
+|                      clk_100m                       |   170    |   484    |
+|                  dphy_rx1_SLOWCLK                   |   164    |   484    |
+|      edb_top_autodbg_inst__/bscan_TCK_buffered      |    1     |   240    |
+| inst_udp_video_generator/inst_ethernet_core/clk_50m |   164    |    1     |
+|                   jtag_inst1_TCK                    |   171    |    1     |
+|                  pll_inst1_CLKOUT0                  |   167    |   484    |
+|                   sfp0_iface_clk                    |   334    |   239    |
++-----------------------------------------------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+
+Elapsed time for Latest PnR Run: 0 hours 2 minutes 4 seconds

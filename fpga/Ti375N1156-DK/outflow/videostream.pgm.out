@@ -1,0 +1,30 @@
+INFO     : Efinix FPGA Bitstream Generator.
+INFO     : Version: 2026.1.132.4.5 
+INFO     : Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+INFO     : Compiled: Aug 31 2026.
+INFO     : Using source file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_pnr/videostream.lbf"
+INFO     : Generating HEX programming file for device "Ti135N676", family "Titanium"
+INFO     : Using periphery source file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.lpf"
+INFO     : Generating bit file: "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.bit"
+INFO     : HEX Generation Options Summary:
+INFO     : 	Listing options specified to bitstream generation:
+INFO     : 	remote_update_retries                    = 0x3
+INFO     : 	bitstream_compression                    = on
+INFO     : 	oscillator_clock_divider                 = DIV4
+INFO     : 	enable_external_master_clock             = off
+INFO     : 	spi_low_power_mode                       = on
+INFO     : 	active_capture_clk_edge                  = negedge
+INFO     : 	four_byte_addressing                     = off
+INFO     : 	enable_remote_update                     = off
+INFO     : 	release_tri_then_reset                   = on
+INFO     : 	enable_seu_crc_check                     = off
+INFO     : 	seu_mode                                 = automatic
+INFO     : 	seu_wait_interval                        = 0xFFFFFF
+INFO     : 	jtag_usercode                            = 0xFFFFFFFF
+INFO     : 	io_weak_pullup                           = on
+INFO     : Finished generating "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.hex"
+INFO     : Efinix Bitstream Generator took 15.211313038 seconds [FlowMsg::StageDuration]
+INFO     :     Efinix Bitstream Generator took 15 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Efinix Bitstream Generator virtual memory usage: begin = 35.46 MB, end = 344.844 MB, delta = 309.384 MB [FlowMsg::VMUsage]
+INFO     : Efinix Bitstream Generator resident set memory usage: begin = 15.488 MB, end = 330.88 MB, delta = 315.392 MB [FlowMsg::RSSUsage]
+INFO     :     Efinix Bitstream Generator peak resident set memory usage = 330.88 MB [FlowMsg::RSSUsage::Peak]

@@ -1,0 +1,162 @@
+INFO     : Efinix FPGA Synthesis.
+INFO     : Version: 2026.1.132.4.5
+INFO     : Compiled: Aug 31 2026.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+
+INFO     : Maximum concurrency has been set to 12 [FlowMsg::MaxThreads]
+INFO     : ***** Beginning Analysis ... *****
+INFO     : default VHDL library search path is now "/home/steve/efinity/2026.1/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+INFO     : Restoring all Verilog modules from file '/home/steve/efinity/2026.1/sim_models/maplib/perilib_efxlib_parsetree.vdb' [VERI-2484]
+INFO     : Restoring all Verilog modules from file '/home/steve/efinity/2026.1/sim_models/maplib/maplib_efxlib_parsetree.vdb' [VERI-2484]
+INFO     : Analyzing Verilog file '/home/steve/efinity/2026.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/steve/efinity/2026.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v' [VERI-1482]
+INFO     : Analysis took 0.089205338 seconds [FlowMsg::StageDuration]
+INFO     :     Analysis took 0.09 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Analysis virtual memory usage: begin = 152.496 MB, end = 152.496 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     : Analysis resident set memory usage: begin = 83.328 MB, end = 87.424 MB, delta = 4.096 MB [FlowMsg::RSSUsage]
+INFO     :     Analysis peak resident set memory usage = 227.224 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending Analysis ... *****
+INFO     : ***** Beginning Elaboration ... *****
+WARNING  : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(138): port 'probe7' remains unconnected for this instance [VERI-1927]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(14): compiling module 'edb_top' [VERI-1018]
+INFO     : ../../vdb/src/efinix_maplib.v(48): compiling module 'EFX_GBUFCE(CE_POLARITY=1'b1)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(524): compiling module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(213): compiling module 'edb_adbg_crc32_7f1f49e4795244fab99fb246b5f3df2b' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(5534): compiling module 'compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(5739): compiling module 'trigger_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=32'b0111,PIPE=1)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(5864): compiling module 'trigger_skipper_7f1f49e4795244fab99fb246b5f3df2b' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(4878): compiling module 'la_biu_7f1f49e4795244fab99fb246b5f3df2b(CAPTURE_WIDTH=32'b0111,DATA_DEPTH=65536)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(4618): compiling module 'fifo_with_read_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,PIPE=0)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(4568): compiling module 'fifo_address_trancode_unit_7f1f49e4795244fab99fb246b5f3df2b(TOTAL_ADDR_WIDTH=16,CELL_ADDR_WIDTH=17,PIPE=0)' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(434): compiling module 'edb_simple_dual_port_ram_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,RAM_INIT_FILE="")' [VERI-1018]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(449): extracting RAM for identifier 'ram' [VERI-2571]
+INFO     : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(291): compiling module 'debug_hub_7f1f49e4795244fab99fb246b5f3df2b' [VERI-1018]
+WARNING  : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(110): input port 'probe7[0]' remains unconnected for this instance [VDB-1053]
+INFO     : Elaboration took 0.46904329 seconds [FlowMsg::StageDuration]
+INFO     :     Elaboration took 0.45 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Elaboration virtual memory usage: begin = 152.496 MB, end = 169.904 MB, delta = 17.408 MB [FlowMsg::VMUsage]
+INFO     : Elaboration resident set memory usage: begin = 87.68 MB, end = 105.6 MB, delta = 17.92 MB [FlowMsg::RSSUsage]
+INFO     :     Elaboration peak resident set memory usage = 227.224 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending Elaboration ... *****
+INFO     : ... Setting Synthesis Option: mode=speed
+INFO     : ***** Beginning Reading Mapping Library ... *****
+INFO     : Reading Mapping Library took 0.006984842 seconds [FlowMsg::StageDuration]
+INFO     :     Reading Mapping Library took 0.01 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Reading Mapping Library virtual memory usage: begin = 169.904 MB, end = 169.904 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     : Reading Mapping Library resident set memory usage: begin = 107.52 MB, end = 107.52 MB, delta = 0 MB [FlowMsg::RSSUsage]
+INFO     :     Reading Mapping Library peak resident set memory usage = 227.224 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending Reading Mapping Library ... *****
+INFO     : ... Pre-synthesis checks begin
+WARNING  : Removing redundant signal : compared_in[0]. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5540) [EFX-0200]
+WARNING  : Removing redundant signal : mask_in[0]. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5541) [EFX-0200]
+WARNING  : Removing redundant signal : trigger_in. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5751) [EFX-0200]
+WARNING  : Removing redundant signal : clk. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:4574) [EFX-0200]
+INFO     : ... Memory 'ram' is not initialized, assuming empty initial contents. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:449) [EFX-0677]
+WARNING  : Removing redundant signal : full. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:4628) [EFX-0200]
+WARNING  : Removing redundant signal : shift_i. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:4898) [EFX-0200]
+WARNING  : Removing redundant signal : trig_out. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:4915) [EFX-0200]
+WARNING  : Removing redundant signal : trig_out_ack. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:4916) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_DRCK. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:1057) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_RESET. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:1058) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_RUNTEST. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:1059) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_SEL. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:1060) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_TMS. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:1064) [EFX-0200]
+WARNING  : Removing redundant signal : trig_in_ack. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:1076) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[6:0]. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3495) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_CAPTURE. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:296) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_DRCK. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:297) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_RUNTEST. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:299) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_TMS. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:304) [EFX-0200]
+INFO     : Module Instance 'la0' input pin 'trig_in' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'la0' input pin 'trig_out_ack' is tied to constant (=0). [EFX-0266]
+WARNING  : Re-wiring to GND non-driven net/port 'probe7[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe8[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe9[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe10[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe11[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe12[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe13[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe14[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe15[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net/port 'probe16[0]' in module 'edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)'. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:110) [EFX-0201]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0201]
+INFO     : ... Pre-synthesis checks end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... NameSpace init begin
+INFO     : ... NameSpace init end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Mapping design "edb_top"
+INFO     : ... Hierarchical pre-synthesis "edb_adbg_crc32_7f1f49e4795244fab99fb246b5f3df2b" begin
+INFO     : ... Hierarchical pre-synthesis "edb_adbg_crc32_7f1f49e4795244fab99fb246b5f3df2b" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "trigger_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=32'b0111,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "trigger_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=32'b0111,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "trigger_skipper_7f1f49e4795244fab99fb246b5f3df2b" begin
+INFO     : ... Hierarchical pre-synthesis "trigger_skipper_7f1f49e4795244fab99fb246b5f3df2b" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "fifo_address_trancode_unit_7f1f49e4795244fab99fb246b5f3df2b(TOTAL_ADDR_WIDTH=16,CELL_ADDR_WIDTH=17,PIPE=0)" begin
+INFO     : ... Hierarchical pre-synthesis "fifo_address_trancode_unit_7f1f49e4795244fab99fb246b5f3df2b(TOTAL_ADDR_WIDTH=16,CELL_ADDR_WIDTH=17,PIPE=0)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "edb_simple_dual_port_ram_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,RAM_INIT_FILE="")" begin
+INFO     : ... Hierarchical pre-synthesis "edb_simple_dual_port_ram_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,RAM_INIT_FILE="")" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "fifo_with_read_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,PIPE=0)" begin
+INFO     : ... Hierarchical pre-synthesis "fifo_with_read_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,PIPE=0)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "la_biu_7f1f49e4795244fab99fb246b5f3df2b(CAPTURE_WIDTH=32'b0111,DATA_DEPTH=65536)" begin
+INFO     : ... Hierarchical pre-synthesis "la_biu_7f1f49e4795244fab99fb246b5f3df2b(CAPTURE_WIDTH=32'b0111,DATA_DEPTH=65536)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "debug_hub_7f1f49e4795244fab99fb246b5f3df2b" begin
+INFO     : ... Hierarchical pre-synthesis "debug_hub_7f1f49e4795244fab99fb246b5f3df2b" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Hierarchical pre-synthesis "edb_top" begin
+INFO     : ... Clock Enable Synthesis Performed on 141 flops.
+INFO     : ... Hierarchical pre-synthesis "edb_top" end (Real time : 1s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Flat synthesis begin
+INFO     : ... Flat synthesis end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Check and break combinational loops begin
+INFO     : ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Sequential Optimization begin
+INFO     : ... Clock Network 'bscan_TCK_buffered' with 475 loads will be considered for sequential optimization.
+INFO     : ... Clock Network 'la0_clk' with 238 loads will be considered for sequential optimization.
+INFO     : ... Sequential Optimization deduced 333 equivalent points.
+INFO     : ... Sequential Optimization end (Real time : 2s CPU user time : 4s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Setup for logic synthesis begin
+INFO     : ... Setup for logic synthesis end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... LUT mapping begin
+INFO     : ... LS, strategy: 3, nd: 1180, ed: 3982, lv: 7, pw: 1838.60
+INFO     : ... LUT mapping end (Real time : 8s CPU user time : 15s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Post-synthesis Verific netlist creation begin
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 15s CPU sys time : 0s MEM : 227224KB)
+INFO     : ... Postmap Retiming Optimization begin
+INFO     : ... Clock Network 'bscan_TCK_buffered' with 475 loads will be considered for retiming optimization.
+INFO     : ... Clock Network 'la0_clk~la0_clk' with 238 loads will be considered for retiming optimization.
+INFO     : ... Performed 0 retime moves.
+INFO     : ... Postmap Retiming Optimization end (Real time : 0s CPU user time : 16s CPU sys time : 0s MEM : 227224KB)
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(17): Input/inout port bscan_DRCK is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(19): Input/inout port bscan_RUNTEST is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v(24): Input/inout port bscan_TMS is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : Found 3 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.023705309 seconds [FlowMsg::StageDuration]
+INFO     :     VDB Netlist Checker took 0.04 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : VDB Netlist Checker virtual memory usage: begin = 343.968 MB, end = 343.968 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     : VDB Netlist Checker resident set memory usage: begin = 139.344 MB, end = 139.344 MB, delta = 0 MB [FlowMsg::RSSUsage]
+INFO     :     VDB Netlist Checker peak resident set memory usage = 227.224 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Resource Summary 
+INFO     : ======================================= 
+INFO     : EFX_ADD                 : 	197
+INFO     : EFX_LUT4                : 	1184
+INFO     : EFX_FF                  : 	710
+INFO     : EFX_SRL8                : 	7
+INFO     : EFX_RAM10               : 	64
+INFO     : EFX_GBUFCE              : 	1
+INFO     : ======================================= 
+INFO     : Writing netlist 'edb_top' to Verilog file '/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.stub.v' [VDB-1030]
+INFO     : The entire flow of EFX_MAP took 13.305900947 seconds [FlowMsg::StageDuration]
+INFO     :     The entire flow of EFX_MAP took 16.51 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 108.144 MB, end = 343.968 MB, delta = 235.824 MB [FlowMsg::VMUsage]
+INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 34.304 MB, end = 151.632 MB, delta = 117.328 MB [FlowMsg::RSSUsage]
+INFO     :     The entire flow of EFX_MAP peak resident set memory usage = 227.224 MB [FlowMsg::RSSUsage::Peak]

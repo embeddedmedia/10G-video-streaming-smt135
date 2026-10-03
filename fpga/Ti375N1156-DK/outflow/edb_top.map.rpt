@@ -1,0 +1,239 @@
+Efinity Synthesis report for project edb_top
+Version: 2026.1.132.4.5
+Generated at: Oct 03, 2026 18:51:32
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : edb_top
+
+family : Titanium
+device : Ti135N676
+project : edb_top
+root : edb_top
+I,include : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK
+I,include : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/ip/efx_csi2_rx_top_rx
+I,include : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/ip/mac10gbe
+I,include : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/ip/sapphire_gen
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 480
+max-dsp-cascade : 24
+max_mult : -1
+max_ram : -1
+mode : speed
+num_srl : -1
+disable_global_ctrl : 0
+gen-mark-debug-json : 0
+keep-gclk-in-module : 1
+mult-decomp-retime : 0
+output-dir : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow
+project : edb_top
+retiming : 1
+root : edb_top
+work-dir : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg
+write-postmap-module : /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.post.vdb
+
+File List:
+
+/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0677" : ... Memory 'ram' is not initialized, assuming empty initial contents. (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:449)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 39
+Total number of FFs with enable signals: 630
++------------------------------------------------------------------+------------------+
+|CE Signal                                                         |Number of FF loads|
++------------------------------------------------------------------+------------------+
+|debug_hub_inst/n96                                                |               82 |
+|la0/n1114                                                         |               64 |
+|la0/n1631                                                         |               64 |
+|la0/tu_trigger                                                    |               64 |
+|ceg_net11                                                         |               64 |
+|~ceg_net26                                                        |               34 |
+|ceg_net19                                                         |               32 |
+|la0/addr_ct_en                                                    |               31 |
+|la0/n1764                                                         |               22 |
+|la0/n10998                                                        |               21 |
+|la0/la_biu_inst/n356                                              |               17 |
+|la0/la_biu_inst/fifo_push                                         |               16 |
+|la0/word_ct_en                                                    |               16 |
+|la0/la_biu_inst/n2105                                             |               16 |
+|la0/la_biu_inst/fifo_with_read_inst/is_last_data                  |               16 |
+|la0/regsel_ld_en                                                  |               13 |
+|la0/la_biu_inst/data_o_en                                         |                9 |
+|ceg_net2                                                          |                6 |
+|la0/op_reg_en                                                     |                4 |
+|debug_hub_inst/n267                                               |                4 |
+|la0/n7618                                                         |                3 |
+|la0/n5952                                                         |                3 |
+|la0/n4286                                                         |                3 |
+|la0/n6785                                                         |                3 |
+|ceg_net8                                                          |                3 |
+|la0/n2620                                                         |                3 |
+|la0/n5119                                                         |                3 |
+|la0/n3453                                                         |                3 |
+|ceg_net27                                                         |                1 |
+|la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/n211|                1 |
+|la0/la_biu_inst/fifo_with_read_inst/n824                          |                1 |
+|la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/n109|                1 |
+|la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/n279|                1 |
+|la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/n143|                1 |
+|la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/n245|                1 |
+|la0/trigger_skipper_n/equal_6/n127                                |                1 |
+|debug_hub_inst/n265                                               |                1 |
+|ceg_net5                                                          |                1 |
+|la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/n177|                1 |
++------------------------------------------------------------------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 10
+Total number of FFs with set/reset signals: 642
++----------------------------------------+------------------+
+|SR Signal                               |Number of FF loads|
++----------------------------------------+------------------+
+|edb_soft_reset                          |              387 |
+|bscan_RESET                             |               83 |
+|la0/ts_resetn                           |               64 |
+|la0/la_biu_inst/fifo_with_read_inst/n949|               49 |
+|la0/la_biu_inst/fifo_rstn               |               33 |
+|la0/la_resetn                           |               21 |
+|la0/n2607                               |                2 |
+|la0/la_biu_inst/n2119                   |                1 |
+|la0/n11550                              |                1 |
+|la0/trigger_skipper_n/n469              |                1 |
++----------------------------------------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Sequential Elements/Signals Trimming Report (begin) ### ### ### 
+'la0/data_from_biu[8]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[9]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[10]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[11]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[12]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[13]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[14]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[15]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[16]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[17]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[18]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[19]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[20]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[21]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[22]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[23]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[24]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[25]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[26]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[27]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[28]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[29]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[30]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[31]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[32]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[33]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[34]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[35]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[36]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[37]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[38]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[39]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[40]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[41]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[42]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[43]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[44]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[45]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[46]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[47]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[48]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[49]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[50]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[51]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[52]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[53]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[54]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[55]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[56]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[57]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[58]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[59]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[60]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[61]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[62]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/data_from_biu[63]' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:3459) (optimized to 0)
+'la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+'la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+'la0/GEN_PROBE[4].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+'la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+'la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+'la0/GEN_PROBE[1].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+'la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/genblk1.genblk1.exp2' (/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/work_dbg/debug_top.v:5599) (merged to equivalence)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                             FFs      SRLs      ADDs       LUTs    COMB4s      RAMs DSP/MULTs
+------------------------------------------------------------       ---      ----      ----       ----      ----      ---- ---------
+edb_top:edb_top                                                 710(0)      7(0)    197(0)    1184(0)      0(0)     64(0)      0(0)
+ +la0:edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PRO...  623(343)      7(0)   197(51)  1152(411)      0(0)     64(0)      0(0)
+  +axi_crc_i:edb_adbg_crc32_7f1f49e4795244fab99fb246b5f3df2b    32(32)      0(0)      0(0)     37(37)      0(0)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +GEN_PROBE[1].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +GEN_PROBE[2].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +GEN_PROBE[3].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +GEN_PROBE[4].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +GEN_PROBE[5].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +GEN_PROBE[6].genblk7.genblk3.trigger_cu:compare_unit_7...      7(7)      0(0)      0(0)       7(7)      0(0)      0(0)      0(0)
+  +trigger_tu:trigger_unit_7f1f49e4795244fab99fb246b5f3df...      1(1)      0(0)      0(0)     12(12)      0(0)      0(0)      0(0)
+  +trigger_skipper_n:trigger_skipper_7f1f49e4795244fab99f...    65(65)      0(0)    63(63)   233(233)      0(0)      0(0)      0(0)
+  +la_biu_inst:la_biu_7f1f49e4795244fab99fb246b5f3df2b(CA...   133(44)      7(0)     83(0)   410(178)      0(0)     64(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read_7f1f49e4795244fab9...    89(82)      7(7)    83(83)   232(102)      0(0)     64(0)      0(0)
+    +transcode_write_addr:fifo_address_trancode_unit_7f1f...      0(0)      0(0)      0(0)     48(48)      0(0)      0(0)      0(0)
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram_7...      7(7)      0(0)      0(0)     82(82)      0(0)    64(64)      0(0)
+ +debug_hub_inst:debug_hub_7f1f49e4795244fab99fb246b5f3df2b     87(87)      0(0)      0(0)     32(32)      0(0)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
+ No DSP in design
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++---------+----------+----------+------------+----------------+
+|Clock    |Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++---------+----------+----------+------------+----------------+
+|bscan_TCK|      474 |        0 |          0 |              0 |
+|la0_clk  |      236 |        7 |        128 |              0 |
++---------+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	18
+OUTPUT PORTS    : 	1
+
+EFX_ADD                 : 	197
+EFX_LUT4                : 	1184
+   1-2  Inputs          : 	216
+   3    Inputs          : 	315
+   4    Inputs          : 	653
+EFX_FF                  : 	710
+EFX_SRL8                : 	7
+EFX_RAM10               : 	64
+EFX_GBUFCE              : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 11s
+Elapsed synthesis time : 13s

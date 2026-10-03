@@ -1,0 +1,399 @@
+!SESSION 2026-09-29 20:41:47.985 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/embedded_sw/sapphire_gen
+
+!ENTRY org.eclipse.ui 4 4 2026-09-29 20:41:54.802
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-29 20:48:59.563
+!MESSAGE Indexed 'app' (10 sources, 151 headers) in 2.77 sec: 5,986 declarations; 11,449 references; 0 unresolved inclusions; 10 syntax errors; 1,226 unresolved names (6.6%)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 20:49:46.119
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.ui 4 0 2026-09-29 20:56:52.198
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4899)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:10650)
+	at org.eclipse.swt.custom.StyledText.setStyleRange(StyledText.java:10526)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AnnotationExpansionControl.resetViewerBackground(AnnotationExpansionControl.java:898)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AnnotationExpansionControl$Item.deselect(AnnotationExpansionControl.java:170)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AnnotationExpansionControl$MyDisposeListener.widgetDisposed(AnnotationExpansionControl.java:192)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1546)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1328)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4757)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1559)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1335)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4757)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:1559)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:281)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:505)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:3426)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1335)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4757)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:543)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:3343)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AnnotationExpansionControl.dispose(AnnotationExpansionControl.java:698)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AnnotationExpansionControl$1.viewportChanged(AnnotationExpansionControl.java:497)
+	at org.eclipse.jface.text.TextViewer.updateViewportListeners(TextViewer.java:3063)
+	at org.eclipse.jface.text.TextViewer$ViewportGuard.keyPressed(TextViewer.java:295)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:171)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1546)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1568)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:928)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3993)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:921)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2414)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6834)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6210)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1565)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4578)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 22:43:21.664
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 22:45:04.552
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 22:46:22.536
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 22:57:07.378
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 23:00:26.232
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 23:07:37.278
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 23:12:50.022
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-29 23:16:42.739
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-09-29 23:19:12.460
+!MESSAGE An internal error occurred during: "Launching co_debug_app_group".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.DebugPlugin.getLaunchManager()" because the return value of "org.eclipse.debug.core.DebugPlugin.getDefault()" is null
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.findLaunchConfiguration(GroupLaunchConfigurationDelegate.java:284)
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.launch(GroupLaunchConfigurationDelegate.java:106)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-09-29 23:19:13.143
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2026-09-30 21:16:22.174 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/embedded_sw/sapphire_gen
+
+!ENTRY org.eclipse.ui 4 4 2026-09-30 21:16:36.041
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:06:49.818
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:09:47.379
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:11:59.067
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:12:48.837
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:13:10.128
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:13:38.476
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-09-30 23:15:49.473
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-09-30 23:17:40.479
+!MESSAGE An internal error occurred during: "Launching co_debug_app_group".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.DebugPlugin.getLaunchManager()" because the return value of "org.eclipse.debug.core.DebugPlugin.getDefault()" is null
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.findLaunchConfiguration(GroupLaunchConfigurationDelegate.java:284)
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.launch(GroupLaunchConfigurationDelegate.java:106)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-09-30 23:17:41.252
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2026-10-01 22:16:45.674 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/embedded_sw/sapphire_gen
+
+!ENTRY org.eclipse.ui 4 4 2026-10-01 22:16:53.000
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-01 22:17:37.174
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-10-01 22:50:22.104
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-10-01 22:50:22.104
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.internal.ui.DebugUIPlugin$2
+!SESSION 2026-10-02 16:20:14.023 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/embedded_sw/sapphire_gen
+
+!ENTRY org.eclipse.ui 4 4 2026-10-02 16:20:21.891
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-02 16:25:10.441
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-02 16:27:32.097
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-02 16:29:11.694
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-02 16:37:15.378
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-02 16:37:52.617
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-02 16:39:42.634
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-10-02 16:47:35.452
+!MESSAGE An internal error occurred during: "Launching co_debug_app_group".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.preferences.IPreferencesService.get(String, String, org.osgi.service.prefs.Preferences[])" because the return value of "org.eclipse.core.runtime.Platform.getPreferencesService()" is null
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.internalGet(ScopedPreferenceStore.java:389)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getBoolean(ScopedPreferenceStore.java:333)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.setValue(ScopedPreferenceStore.java:615)
+	at org.eclipse.debug.internal.ui.groups.GroupLaunchHandler.handleStatus(GroupLaunchHandler.java:58)
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.launch(GroupLaunchConfigurationDelegate.java:147)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-10-02 16:47:35.591
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2026-10-03 17:23:38.423 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/embedded_sw/sapphire_gen
+
+!ENTRY org.eclipse.ui 4 4 2026-10-03 17:23:45.990
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:27:10.472
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:29:55.912
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:30:46.692
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:31:28.963
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:32:27.313
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:34:37.894
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:35:29.480
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:44:22.821
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:45:45.072
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:46:17.215
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:51:36.676
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:54:35.557
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:55:14.486
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 17:56:03.339
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:18:33.976
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:19:21.056
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:19:47.103
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:20:40.694
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:21:14.086
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:22:16.240
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:23:17.038
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-10-03 18:23:33.857
+!MESSAGE Request monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBProcesses_7_0$6@63514b3b): Status CANCEL: unknown code=1 ' resulted in a cancel status: Status CANCEL: unknown code=1 , even though the request is not set to cancel.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:23:43.631
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:24:30.403
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:26:13.058
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:27:59.603
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:28:45.699
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:29:52.895
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:32:19.377
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:33:24.015
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:34:08.119
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:35:41.471
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:36:14.573
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:37:30.448
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:38:01.957
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:38:50.629
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-10-03 18:40:22.252
+!MESSAGE An internal error occurred during: "Launching co_debug_app_group".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1518)
+	at org.eclipse.swt.widgets.Display.getThread(Display.java:3447)
+	at org.eclipse.debug.internal.ui.sourcelookup.Prompter.handleStatus(Prompter.java:65)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:245)
+	at org.eclipse.core.externaltools.internal.launchConfigurations.ProgramLaunchDelegate.saveBeforeLaunch(ProgramLaunchDelegate.java:243)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:197)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:767)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.launchChild(GroupLaunchConfigurationDelegate.java:167)
+	at org.eclipse.debug.internal.core.groups.GroupLaunchConfigurationDelegate.launch(GroupLaunchConfigurationDelegate.java:129)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-10-03 18:40:23.115
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2026-10-03 18:43:31.935 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/embedded_sw/sapphire_gen
+
+!ENTRY org.eclipse.ui 4 4 2026-10-03 18:43:34.913
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 18:43:51.991
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-10-03 19:04:13.985
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.managedbuild.cross.riscv.core 4 1 2026-10-03 19:16:57.674
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.managedbuild.cross.riscv.core 4 1 2026-10-03 19:17:55.335
+!MESSAGE /home/steve/efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-gdb --interpreter=mi2 --nx

@@ -1,0 +1,24 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Oct 03, 2026 18:51:32
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	       FFs	      SRLs	      ADDs	       LUTs	    COMB4s	      RAMs	 DSP/MULTs
+edb_top:edb_top                                             	   710(0)	     7(0)	   197(0)	   1184(0)	     0(0)	    64(0)	     0(0)	
+ +la0:edb_la_top_7f1f49e4795244fab99fb246b5f3df2b(NUM_PROBES=7,DATA_DEPTH=65536,INPUT_PIPE_STAGES=1,UUID=128'b0110110000101110110101000100100011101001100111101000110001011111000101011100011101001101010110101001010011010111101001010111110,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1,PROBE3_TYPE=1,PROBE4_TYPE=1,PROBE5_TYPE=1,PROBE6_TYPE=1)	 623(343)	     7(0)	  197(51)	 1152(411)	     0(0)	    64(0)	     0(0)	
+  +axi_crc_i:edb_adbg_crc32_7f1f49e4795244fab99fb246b5f3df2b	   32(32)	     0(0)	     0(0)	    37(37)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[1].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[2].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[3].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[4].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[5].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[6].genblk7.genblk3.trigger_cu:compare_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=11'b01,PIPE=1)	     7(7)	     0(0)	     0(0)	      7(7)	     0(0)	     0(0)	     0(0)	
+  +trigger_tu:trigger_unit_7f1f49e4795244fab99fb246b5f3df2b(WIDTH=32'b0111,PIPE=1)	     1(1)	     0(0)	     0(0)	    12(12)	     0(0)	     0(0)	     0(0)	
+  +trigger_skipper_n:trigger_skipper_7f1f49e4795244fab99fb246b5f3df2b	   65(65)	     0(0)	   63(63)	  233(233)	     0(0)	     0(0)	     0(0)	
+  +la_biu_inst:la_biu_7f1f49e4795244fab99fb246b5f3df2b(CAPTURE_WIDTH=32'b0111,DATA_DEPTH=65536)	  133(44)	     7(0)	    83(0)	  410(178)	     0(0)	    64(0)	     0(0)	
+   +fifo_with_read_inst:fifo_with_read_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,PIPE=0)	   89(82)	     7(7)	   83(83)	  232(102)	     0(0)	    64(0)	     0(0)	
+    +transcode_write_addr:fifo_address_trancode_unit_7f1f49e4795244fab99fb246b5f3df2b(TOTAL_ADDR_WIDTH=16,CELL_ADDR_WIDTH=17,PIPE=0)	     0(0)	     0(0)	     0(0)	    48(48)	     0(0)	     0(0)	     0(0)	
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram_7f1f49e4795244fab99fb246b5f3df2b(DATA_WIDTH=32'b01000,ADDR_WIDTH=16,RAM_INIT_FILE="")	     7(7)	     0(0)	     0(0)	    82(82)	     0(0)	   64(64)	     0(0)	
+ +debug_hub_inst:debug_hub_7f1f49e4795244fab99fb246b5f3df2b 	   87(87)	     0(0)	     0(0)	    32(32)	     0(0)	     0(0)	     0(0)	

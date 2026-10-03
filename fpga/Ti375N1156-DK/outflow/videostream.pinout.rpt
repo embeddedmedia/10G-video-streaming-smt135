@@ -1,0 +1,694 @@
+
+# Efinity Pinout Report
+# Version: 2026.1.132.4.5
+# Date: 2026-10-03 18:55
+
+# Copyright (C) 2013 - 2026 Efinix Inc. All rights reserved.
+
+# Device: Ti135N676
+# Package status: final
+# Project: videostream
+# Configuration mode: active (x4)
+
+# NOTE: Similar information is available in videostream.pinout.csv
+
++------------+----------------------------------------+-----------------------------+---------------+--------------+------------------+-------+-------------+-------------------------------------------+
+| Pin Number |              Signal Name               |           Pin Name          |   Direction   | I/O Standard | I/O Bank Voltage |  Bank |  Pull Type  |                  Function                 |
++------------+----------------------------------------+-----------------------------+---------------+--------------+------------------+-------+-------------+-------------------------------------------+
+|     A1     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     A2     |               --SSU_N--                |   GPIOB_N_20_SSU_N_CLK6_N   |               |              |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     A3     |  --CDI0-- / system_spi_0_io_data_1.N   |   GPIOB_N_27_CDI0_CLK10_N   | Bidirectional | 1.8 V LVCMOS |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     A4     |        system_spi_0_io_data_0.P        |   GPIOB_P_27_CDI1_CLK10_P   | Bidirectional | 1.8 V LVCMOS |      1.8 V       |   4A  |             |                User IO/GCLK               |
+|     A5     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     A6     |               sfp0.RXDP0               |           Q0_RXDP0          |               |              |                  |   Q0  |             |                                           |
+|     A7     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     A8     |               --UNUSED--               |           Q0_RXDP1          |               |              |                  |   Q0  |             |                                           |
+|     A9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A10     |               --UNUSED--               |           Q0_RXDP2          |               |              |                  |   Q0  |             |                                           |
+|    A11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A12     |               --UNUSED--               |           Q0_RXDP3          |               |              |                  |   Q0  |             |                                           |
+|    A13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A14     |               --UNUSED--               |           Q1_RXDP0          |               |              |                  |   Q1  |             |                                           |
+|    A15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A16     |               --UNUSED--               |           Q1_RXDP1          |               |              |                  |   Q1  |             |                                           |
+|    A17     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A18     |               --UNUSED--               |           Q1_RXDP2          |               |              |                  |   Q1  |             |                                           |
+|    A19     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A20     |               --UNUSED--               |           Q1_RXDP3          |               |              |                  |   Q1  |             |                                           |
+|    A21     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    A22     |               --UNUSED--               |         MIPI1_TXDN4         |               |              |                  |   TR  |             |                                           |
+|    A23     |               --UNUSED--               |         MIPI1_TXDP4         |               |              |                  |   TR  |             |                                           |
+|    A24     |               --UNUSED--               |         MIPI1_TXDN2         |               |              |                  |   TR  |             |                                           |
+|    A25     |               --UNUSED--               |         MIPI1_TXDN1         |               |              |                  |   TR  |             |                                           |
+|    A26     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AA1     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AA2     |               --UNUSED--               |         MIPI0_TXDN0         |               |              |                  |   BL  |             |                                           |
+|    AA3     |                --VCC--                 |       VCC18A_MIPI0_TX       |     Power     |              |                  |   BL  |             |                                           |
+|    AA4     |               --UNUSED--               |         MIPI0_TXDP1         |               |              |                  |   BL  |             |                                           |
+|    AA5     |               --UNUSED--               |           GPIOL_05          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|    AA6     |                --VCC--                 |         VCCIO33_BL0         |     Power     |              |      3.3 V       |  BL0  |             |                VCCIO Power                |
+|    AA7     |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AA8     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    AA9     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    AA10    |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    AA11    |               --UNUSED--               |              NC             |               |              |                  |       |             |                                           |
+|    AA12    |               --UNUSED--               |              NC             |               |              |                  |       |             |                                           |
+|    AA13    |               --UNUSED--               |              NC             |               |              |                  |       |             |                                           |
+|    AA14    |               --UNUSED--               |              NC             |               |              |                  |       |             |                                           |
+|    AA15    |               --UNUSED--               |              NC             |               |              |                  |       |             |                                           |
+|    AA16    |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    AA17    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AA18    |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    AA19    |               --UNUSED--               |           GPIOL_62          |     Input     |              |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    AA20    |               --UNUSED--               |           GPIOL_61          |     Input     |              |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    AA21    |                cam_sda                 |           GPIOL_56          | Bidirectional | 3.3 V LVCMOS |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    AA22    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AA23    |               --UNUSED--               |      GPIOT_N_00_CLK26_N     |               |              |      1.8 V       |   2A  |             |             User IO/GCLK/RCLK             |
+|    AA24    |               --UNUSED--               |      GPIOT_P_00_CLK26_P     |               |              |      1.8 V       |   2A  |             |             User IO/GCLK/RCLK             |
+|    AA25    |               --UNUSED--               |      GPIOT_N_03_CLK30_N     |               |              |      1.8 V       |   2A  |             |                User IO/GCLK               |
+|    AA26    |               --UNUSED--               |      GPIOT_P_03_CLK30_P     |               |              |      1.8 V       |   2A  |             |                User IO/GCLK               |
+|    AB1     |               --UNUSED--               |         MIPI0_TXDP2         |               |              |                  |   BL  |             |                                           |
+|    AB2     |               --UNUSED--               |         MIPI0_TXDN2         |               |              |                  |   BL  |             |                                           |
+|    AB3     |               --UNUSED--               |         MIPI0_TXDP3         |               |              |                  |   BL  |             |                                           |
+|    AB4     |               --UNUSED--               |         MIPI0_TXDN1         |               |              |                  |   BL  |             |                                           |
+|    AB5     |               --UNUSED--               |           GPIOL_06          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|    AB6     |               --UNUSED--               |           GPIOL_07          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|    AB7     |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AB8     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB9     |               ddr.DQ[15]               |          DDR_DQ[15]         |               |              |                  |  DDR  |             |                                           |
+|    AB10    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB11    |                ddr.CAL                 |           DDR_CAL           |               |              |                  |  DDR  |             |                                           |
+|    AB12    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB13    |               --UNUSED--               |              NC             |               |              |                  |       |             |                                           |
+|    AB14    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB15    |               ddr.RST_N                |          DDR_RST_N          |               |              |                  |  DDR  |             |                                           |
+|    AB16    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB17    |                ddr.A[5]                |           DDR_A[5]          |               |              |                  |  DDR  |             |                                           |
+|    AB18    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AB19    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB20    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AB21    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB22    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AB23    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AB24    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AB25    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AB26    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AC1     |               --UNUSED--               |         MIPI0_TXDP4         |               |              |                  |   BL  |             |                                           |
+|    AC2     |               --UNUSED--               |         MIPI0_TXDN4         |               |              |                  |   BL  |             |                                           |
+|    AC3     |               --UNUSED--               |         MIPI0_TXDN3         |               |              |                  |   BL  |             |                                           |
+|    AC4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AC5     |               --UNUSED--               |           GPIOL_08          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|    AC6     |                 sw[1]                  |           GPIOL_09          |     Input     | 3.3 V LVCMOS |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|    AC7     |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AC8     |               ddr.DQ[3]                |          DDR_DQ[3]          |               |              |                  |  DDR  |             |                                           |
+|    AC9     |               ddr.DQ[14]               |          DDR_DQ[14]         |               |              |                  |  DDR  |             |                                           |
+|    AC10    |               ddr.DM[1]                |          DDR_DM[1]          |               |              |                  |  DDR  |             |                                           |
+|    AC11    |               ddr.DQ[12]               |          DDR_DQ[12]         |               |              |                  |  DDR  |             |                                           |
+|    AC12    |               ddr.DQ[13]               |          DDR_DQ[13]         |               |              |                  |  DDR  |             |                                           |
+|    AC13    |              ddr.CS_N[0]               |         DDR_CS_N[0]         |               |              |                  |  DDR  |             |                                           |
+|    AC14    |               ddr.CKE[1]               |          DDR_CKE[1]         |               |              |                  |  DDR  |             |                                           |
+|    AC15    |               ddr.CKE[0]               |          DDR_CKE[0]         |               |              |                  |  DDR  |             |                                           |
+|    AC16    |                ddr.A[3]                |           DDR_A[3]          |               |              |                  |  DDR  |             |                                           |
+|    AC17    |                ddr.A[4]                |           DDR_A[4]          |               |              |                  |  DDR  |             |                                           |
+|    AC18    |               ddr.DQ[19]               |          DDR_DQ[19]         |               |              |                  |  DDR  |             |                                           |
+|    AC19    |               ddr.DM[2]                |          DDR_DM[2]          |               |              |                  |  DDR  |             |                                           |
+|    AC20    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AC21    |               ddr.DQ[20]               |          DDR_DQ[20]         |               |              |                  |  DDR  |             |                                           |
+|    AC22    |               ddr.DQ[27]               |          DDR_DQ[27]         |               |              |                  |  DDR  |             |                                           |
+|    AC23    |               ddr.DQ[28]               |          DDR_DQ[28]         |               |              |                  |  DDR  |             |                                           |
+|    AC24    |               ddr.DQ[29]               |          DDR_DQ[29]         |               |              |                  |  DDR  |             |                                           |
+|    AC25    |               ddr.DM[3]                |          DDR_DM[3]          |               |              |                  |  DDR  |             |                                           |
+|    AC26    |               ddr.DQ[30]               |          DDR_DQ[30]         |               |              |                  |  DDR  |             |                                           |
+|    AD1     |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AD2     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD3     |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AD4     |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AD5     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD6     |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AD7     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD8     |               ddr.DQ[4]                |          DDR_DQ[4]          |               |              |                  |  DDR  |             |                                           |
+|    AD9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD10    |               ddr.DQ[10]               |          DDR_DQ[10]         |               |              |                  |  DDR  |             |                                           |
+|    AD11    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD12    |               ddr.DQ[11]               |          DDR_DQ[11]         |               |              |                  |  DDR  |             |                                           |
+|    AD13    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD14    |              ddr.CS_N[1]               |         DDR_CS_N[1]         |               |              |                  |  DDR  |             |                                           |
+|    AD15    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD16    |                ddr.A[2]                |           DDR_A[2]          |               |              |                  |  DDR  |             |                                           |
+|    AD17    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD18    |               ddr.DQ[21]               |          DDR_DQ[21]         |               |              |                  |  DDR  |             |                                           |
+|    AD19    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD20    |              ddr.DQS_N[2]              |         DDR_DQS_N[2]        |               |              |                  |  DDR  |             |                                           |
+|    AD21    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD22    |               ddr.DQ[18]               |          DDR_DQ[18]         |               |              |                  |  DDR  |             |                                           |
+|    AD23    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD24    |               ddr.DQ[24]               |          DDR_DQ[24]         |               |              |                  |  DDR  |             |                                           |
+|    AD25    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AD26    |               ddr.DQ[31]               |          DDR_DQ[31]         |               |              |                  |  DDR  |             |                                           |
+|    AE1     |               ddr.DQ[1]                |          DDR_DQ[1]          |               |              |                  |  DDR  |             |                                           |
+|    AE2     |               ddr.DQ[0]                |          DDR_DQ[0]          |               |              |                  |  DDR  |             |                                           |
+|    AE3     |               ddr.DQ[2]                |          DDR_DQ[2]          |               |              |                  |  DDR  |             |                                           |
+|    AE4     |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE5     |               ddr.DQS[0]               |          DDR_DQS[0]         |               |              |                  |  DDR  |             |                                           |
+|    AE6     |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE7     |               ddr.DQ[6]                |          DDR_DQ[6]          |               |              |                  |  DDR  |             |                                           |
+|    AE8     |               ddr.DQ[7]                |          DDR_DQ[7]          |               |              |                  |  DDR  |             |                                           |
+|    AE9     |               ddr.DQ[8]                |          DDR_DQ[8]          |               |              |                  |  DDR  |             |                                           |
+|    AE10    |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE11    |              ddr.DQS_N[1]              |         DDR_DQS_N[1]        |               |              |                  |  DDR  |             |                                           |
+|    AE12    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE13    |              ddr.CS_N[2]               |         DDR_CS_N[2]         |               |              |                  |  DDR  |             |                                           |
+|    AE14    |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE15    |                ddr.CK_N                |           DDR_CK_N          |               |              |                  |  DDR  |             |                                           |
+|    AE16    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE17    |                ddr.A[1]                |           DDR_A[1]          |               |              |                  |  DDR  |             |                                           |
+|    AE18    |               ddr.DQ[22]               |          DDR_DQ[22]         |               |              |                  |  DDR  |             |                                           |
+|    AE19    |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE20    |               ddr.DQS[2]               |          DDR_DQS[2]         |               |              |                  |  DDR  |             |                                           |
+|    AE21    |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE22    |               ddr.DQ[17]               |          DDR_DQ[17]         |               |              |                  |  DDR  |             |                                           |
+|    AE23    |               ddr.DQ[26]               |          DDR_DQ[26]         |               |              |                  |  DDR  |             |                                           |
+|    AE24    |                --VCC--                 |        VDDQX_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AE25    |               ddr.DQS[3]               |          DDR_DQS[3]         |               |              |                  |  DDR  |             |                                           |
+|    AE26    |                --VCC--                 |         VDDQ_PHY_DDR        |     Power     |              |                  |  DDR  |             |                                           |
+|    AF1     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF2     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF3     |               ddr.DM[0]                |          DDR_DM[0]          |               |              |                  |  DDR  |             |                                           |
+|    AF4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF5     |              ddr.DQS_N[0]              |         DDR_DQS_N[0]        |               |              |                  |  DDR  |             |                                           |
+|    AF6     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF7     |               ddr.DQ[5]                |          DDR_DQ[5]          |               |              |                  |  DDR  |             |                                           |
+|    AF8     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF9     |               ddr.DQ[9]                |          DDR_DQ[9]          |               |              |                  |  DDR  |             |                                           |
+|    AF10    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF11    |               ddr.DQS[1]               |          DDR_DQS[1]         |               |              |                  |  DDR  |             |                                           |
+|    AF12    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF13    |              ddr.CS_N[3]               |         DDR_CS_N[3]         |               |              |                  |  DDR  |             |                                           |
+|    AF14    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF15    |                 ddr.CK                 |            DDR_CK           |               |              |                  |  DDR  |             |                                           |
+|    AF16    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF17    |                ddr.A[0]                |           DDR_A[0]          |               |              |                  |  DDR  |             |                                           |
+|    AF18    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF19    |               ddr.DQ[23]               |          DDR_DQ[23]         |               |              |                  |  DDR  |             |                                           |
+|    AF20    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF21    |               ddr.DQ[16]               |          DDR_DQ[16]         |               |              |                  |  DDR  |             |                                           |
+|    AF22    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF23    |               ddr.DQ[25]               |          DDR_DQ[25]         |               |              |                  |  DDR  |             |                                           |
+|    AF24    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    AF25    |              ddr.DQS_N[3]              |         DDR_DQS_N[3]        |               |              |                  |  DDR  |             |                                           |
+|    AF26    |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     B1     |           --EXT_CONFIG_CLK--           | GPIOB_P_20_EXTSPICLK_CLK6_P |               |              |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     B2     |                --CDI2--                |       GPIOB_N_26_CDI2       |               |              |      1.8 V       |   4A  |             | User IO/MIPI_GCLK/MIPI_RCLK/Configuration |
+|     B3     | --CCK-- / system_spi_0_io_sclk_write.P |        GPIOB_P_26_CCK       |     Output    | 1.8 V LVCMOS |      1.8 V       |   4A  |             | User IO/MIPI_GCLK/MIPI_RCLK/Configuration |
+|     B4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     B5     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     B6     |               sfp0.RXDN0               |           Q0_RXDN0          |               |              |                  |   Q0  |             |                                           |
+|     B7     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     B8     |               --UNUSED--               |           Q0_RXDN1          |               |              |                  |   Q0  |             |                                           |
+|     B9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B10     |               --UNUSED--               |           Q0_RXDN2          |               |              |                  |   Q0  |             |                                           |
+|    B11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B12     |               --UNUSED--               |           Q0_RXDN3          |               |              |                  |   Q0  |             |                                           |
+|    B13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B14     |               --UNUSED--               |           Q1_RXDN0          |               |              |                  |   Q1  |             |                                           |
+|    B15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B16     |               --UNUSED--               |           Q1_RXDN1          |               |              |                  |   Q1  |             |                                           |
+|    B17     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B18     |               --UNUSED--               |           Q1_RXDN2          |               |              |                  |   Q1  |             |                                           |
+|    B19     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B20     |               --UNUSED--               |           Q1_RXDN3          |               |              |                  |   Q1  |             |                                           |
+|    B21     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    B22     |               --UNUSED--               |         MIPI1_TXDN3         |               |              |                  |   TR  |             |                                           |
+|    B23     |                --VCC--                 |       VCC18A_MIPI1_TX       |     Power     |              |                  |   TR  |             |                                           |
+|    B24     |               --UNUSED--               |         MIPI1_TXDP2         |               |              |                  |   TR  |             |                                           |
+|    B25     |               --UNUSED--               |         MIPI1_TXDP1         |               |              |                  |   TR  |             |                                           |
+|    B26     |             dphy_rx1.CLKP              |         MIPI1_RXDN1         |               |              |                  |   TR  |             |                                           |
+|     C1     |               --CBSEL0--               |      GPIOB_N_19_CBSEL0      |               |              |      1.8 V       |   4A  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     C2     |                --CDI6--                |       GPIOB_N_23_CDI6       |               |              |      1.8 V       |   4A  |             |             User IO/PLL_CLKIN             |
+|     C3     |                --CDI7--                |    GPIOB_P_23_CDI7_PLLIN0   |               |              |      1.8 V       |   4A  |             |           User IO/PLL_CLKIN/VREF          |
+|     C4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     C5     |               sfp0.TXDP0               |           Q0_TXDP0          |               |              |                  |   Q0  |             |                                           |
+|     C6     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     C7     |               --UNUSED--               |           Q0_TXDP1          |               |              |                  |   Q0  |             |                                           |
+|     C8     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     C9     |               --UNUSED--               |           Q0_TXDP2          |               |              |                  |   Q0  |             |                                           |
+|    C10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C11     |               --UNUSED--               |           Q0_TXDP3          |               |              |                  |   Q0  |             |                                           |
+|    C12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C13     |               --UNUSED--               |           Q1_TXDP0          |               |              |                  |   Q1  |             |                                           |
+|    C14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C15     |               --UNUSED--               |           Q1_TXDP1          |               |              |                  |   Q1  |             |                                           |
+|    C16     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C17     |               --UNUSED--               |           Q1_TXDP2          |               |              |                  |   Q1  |             |                                           |
+|    C18     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C19     |               --UNUSED--               |           Q1_TXDP3          |               |              |                  |   Q1  |             |                                           |
+|    C20     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C21     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    C22     |               --UNUSED--               |         MIPI1_TXDP3         |               |              |                  |   TR  |             |                                           |
+|    C23     |               --UNUSED--               |         MIPI1_TXDN0         |               |              |                  |   TR  |             |                                           |
+|    C24     |               --UNUSED--               |         MIPI1_TXDP0         |               |              |                  |   TR  |             |                                           |
+|    C25     |               --UNUSED--               |         MIPI1_RXDN2         |               |              |                  |   TR  |             |                                           |
+|    C26     |             dphy_rx1.CLKN              |         MIPI1_RXDP1         |               |              |                  |   TR  |             |                                           |
+|     D1     |               --CBSEL1--               |      GPIOB_P_19_CBSEL1      |               |              |      1.8 V       |   4A  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     D2     |                --VCC--                 |           VCCIO4A           |     Power     |              |      1.8 V       |   4A  |             |                VCCIO Power                |
+|     D3     |    --SSL_N-- / system_spi_0_io_ss.N    |       GPIOB_N_25_SSL_N      |     Output    | 1.8 V LVCMOS |      1.8 V       |   4A  |             |      User IO/PLL_CLKIN/Configuration      |
+|     D4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     D5     |               sfp0.TXDN0               |           Q0_TXDN0          |               |              |                  |   Q0  |             |                                           |
+|     D6     |                --VCC--                 |          VDDA_C_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|     D7     |               --UNUSED--               |           Q0_TXDN1          |               |              |                  |   Q0  |             |                                           |
+|     D8     |                --VCC--                 |          VDDA_C_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|     D9     |               --UNUSED--               |           Q0_TXDN2          |               |              |                  |   Q0  |             |                                           |
+|    D10     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    D11     |               --UNUSED--               |           Q0_TXDN3          |               |              |                  |   Q0  |             |                                           |
+|    D12     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    D13     |               --UNUSED--               |           Q1_TXDN0          |               |              |                  |   Q1  |             |                                           |
+|    D14     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    D15     |               --UNUSED--               |           Q1_TXDN1          |               |              |                  |   Q1  |             |                                           |
+|    D16     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    D17     |               --UNUSED--               |           Q1_TXDN2          |               |              |                  |   Q1  |             |                                           |
+|    D18     |                --VCC--                 |          VDDA_C_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    D19     |               --UNUSED--               |           Q1_TXDN3          |               |              |                  |   Q1  |             |                                           |
+|    D20     |                --VCC--                 |          VDDA_C_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    D21     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    D22     |               --UNUSED--               |          GPIOR_117          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    D23     |               --UNUSED--               |         MIPI1_RXDN4         |               |              |                  |   TR  |             |                                           |
+|    D24     |               --UNUSED--               |         MIPI1_RXDP4         |               |              |                  |   TR  |             |                                           |
+|    D25     |               --UNUSED--               |         MIPI1_RXDP2         |               |              |                  |   TR  |             |                                           |
+|    D26     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     E1     |               --CDI34--                |      GPIOB_N_21_CLK7_N      |               |              |      1.8 V       |   4A  |             |                User IO/GCLK               |
+|     E2     |               --CDI35--                |      GPIOB_P_21_CLK7_P      |               |              |      1.8 V       |   4A  |             |                User IO/GCLK               |
+|     E3     |                --CDI3--                |    GPIOB_P_25_CDI3_PLLIN0   |               |              |      1.8 V       |   4A  |             |      User IO/PLL_CLKIN/Configuration      |
+|     E4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     E5     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     E6     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     E7     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     E8     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     E9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E10     |          cmn_inst1.REFCLK0_P           |         Q0_REFCLK0_P        |               |              |                  |   Q0  |             |                                           |
+|    E11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E12     |               --UNUSED--               |         Q0_REFCLK1_P        |               |              |                  |   Q0  |             |                                           |
+|    E13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E14     |               --UNUSED--               |         Q1_REFCLK0_P        |               |              |                  |   Q1  |             |                                           |
+|    E15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E16     |               --UNUSED--               |         Q1_REFCLK1_P        |               |              |                  |   Q1  |             |                                           |
+|    E17     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E18     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E19     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E20     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E21     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    E22     |               --UNUSED--               |          GPIOR_116          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    E23     |             dphy_rx1.LN0N              |         MIPI1_RXDN3         |               |              |                  |   TR  |             |                                           |
+|    E24     |                --VCC--                 |       VCC18A_MIPI1_RX       |     Power     |              |                  |   TR  |             |                                           |
+|    E25     |             dphy_rx1.LN1N              |         MIPI1_RXDN0         |               |              |                  |   TR  |             |                                           |
+|    E26     |             dphy_rx1.LN1P              |         MIPI1_RXDP0         |               |              |                  |   TR  |             |                                           |
+|     F1     |               --TEST_N--               |   GPIOB_N_17_TEST_N_CLK4_N  |               |              |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     F2     |              --NSTATUS--               |  GPIOB_P_17_NSTATUS_CLK4_P  |               |              |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     F3     |                --VCC--                 |           VCCIO4A           |     Power     |              |      1.8 V       |   4A  |             |                VCCIO Power                |
+|     F4     |                --CDI4--                |       GPIOB_N_24_CDI4       |               |              |      1.8 V       |   4A  |             |             User IO/PLL_EXTFB             |
+|     F5     |               --UNUSED--               |       GPIOR_130_PLLIN1      |     Input     |              |      3.3 V       |  BR0  | weak pullup |             User IO/PLL_CLKIN             |
+|     F6     |               --UNUSED--               |     GPIOR_131_PERST_Q0_N    |     Input     |              |      3.3 V       |  BR0  | weak pullup |            User IO/PCIE_PERSTN            |
+|     F7     |               --UNUSED--               |          GPIOR_132          |     Input     |              |      3.3 V       |  BR0  | weak pullup |                  User IO                  |
+|     F8     |                --TDI--                 |             TDI             |     Input     |              |      3.3 V       |  BR1  |             |               Configuration               |
+|     F9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    F10     |          cmn_inst1.REFCLK0_N           |         Q0_REFCLK0_N        |               |              |                  |   Q0  |             |                                           |
+|    F11     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    F12     |               --UNUSED--               |         Q0_REFCLK1_N        |               |              |                  |   Q0  |             |                                           |
+|    F13     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    F14     |               --UNUSED--               |         Q1_REFCLK0_N        |               |              |                  |   Q1  |             |                                           |
+|    F15     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    F16     |               --UNUSED--               |         Q1_REFCLK1_N        |               |              |                  |   Q1  |             |                                           |
+|    F17     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    F18     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    F19     |               --UNUSED--               |          GPIOR_110          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    F20     |               --UNUSED--               |          GPIOR_111          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    F21     |               --UNUSED--               |          GPIOR_113          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    F22     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    F23     |               --UNUSED--               |          GPIOR_114          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    F24     |             dphy_rx1.LN0P              |         MIPI1_RXDP3         |               |              |                  |   TR  |             |                                           |
+|    F25     |               --UNUSED--               |          GPIOR_119          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    F26     |               --UNUSED--               |      GPIOT_N_39_CLK15_N     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|     G1     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     G2     |               --CDI37--                |      GPIOB_P_14_CLK1_P      |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     G3     |            --PCR_READBACK--            |      GPIOB_N_18_CLK5_N      |               |              |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     G4     |                --CDI5--                |    GPIOB_P_24_CDI5_EXTFB    |               |              |      1.8 V       |   4A  |             |             User IO/PLL_EXTFB             |
+|     G5     |               --UNUSED--               |        GPIOR_128_CLK9       |     Input     |              |      3.3 V       |  BR0  | weak pullup |                User IO/GCLK               |
+|     G6     |                --VCC--                 |         VCCIO33_BR0         |     Power     |              |      3.3 V       |  BR0  |             |                VCCIO Power                |
+|     G7     |               --UNUSED--               |       GPIOR_129_PLLIN1      |     Input     |              |      3.3 V       |  BR0  | weak pullup |             User IO/PLL_CLKIN             |
+|     G8     |                --TCK--                 |             TCK             |     Input     |              |      3.3 V       |  BR1  |             |               Configuration               |
+|     G9     |               --CDONE--                |            CDONE            |     Output    |              |      1.8 V       |   4A  |             |               Configuration               |
+|    G10     |                --VCC--                 |          VDDA_H_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    G11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    G12     |           cmn_inst1.CAL_RES            |          Q0_CAL_RES         |               |              |                  |   Q0  |             |                                           |
+|    G13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    G14     |                --VCC--                 |          VDDA_D_Q01         |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    G15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    G16     |               --UNUSED--               |          Q1_CAL_RES         |               |              |                  |   Q1  |             |                                           |
+|    G17     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    G18     |                --VCC--                 |         VCCIO33_TR5         |     Power     |              |      1.8 V       |  TR5  |             |                VCCIO Power                |
+|    G19     |               --UNUSED--               |           GPIOR_87          |     Input     |              |      1.8 V       |  TR2  | weak pullup |                  User IO                  |
+|    G20     |               --UNUSED--               |       GPIOR_86_PLLIN1       |     Input     |              |      1.8 V       |  TR2  | weak pullup |             User IO/PLL_CLKIN             |
+|    G21     |               sda_debug                |           GPIOR_96          |     Output    | 3.3 V LVCMOS |      3.3 V       |  TR3  |             |                  User IO                  |
+|    G22     |               scl_debug                |           GPIOR_97          |     Output    | 3.3 V LVCMOS |      3.3 V       |  TR3  |             |                  User IO                  |
+|    G23     |               --UNUSED--               |           GPIOR_99          |     Input     |              |      3.3 V       |  TR3  | weak pullup |                  User IO                  |
+|    G24     |               --UNUSED--               |          GPIOR_118          |     Input     |              |      1.8 V       |  TR5  | weak pullup |                  User IO                  |
+|    G25     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    G26     |               --UNUSED--               |      GPIOT_P_39_CLK15_P     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|     H1     |               --CDI45--                |          GPIOB_P_08         |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     H2     |               --CDI36--                |      GPIOB_N_14_CLK1_N      |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     H3     |             --SEU_ERROR--              |      GPIOB_P_18_CLK5_P      |               |              |      1.8 V       |   4A  |             |         User IO/GCLK/Configuration        |
+|     H4     |                --VCC--                 |           VCCIO4A           |     Power     |              |      1.8 V       |   4A  |             |                VCCIO Power                |
+|     H5     |               --UNUSED--               |        GPIOR_127_CLK8       |     Input     |              |      3.3 V       |  BR0  | weak pullup |             User IO/GCLK/RCLK             |
+|     H6     |               --UNUSED--               |          GPIOR_125          |     Input     |              |      3.3 V       |  BR0  | weak pullup |                  User IO                  |
+|     H7     |               --UNUSED--               |          GPIOR_126          |     Input     |              |      3.3 V       |  BR0  | weak pullup |                  User IO                  |
+|     H8     |                --VCC--                 |         VCCIO33_BR1         |     Power     |              |      3.3 V       |  BR1  |             |                VCCIO Power                |
+|     H9     |              --CRESET_N--              |           CRESET_N          |     Input     |              |      1.8 V       |   4A  |             |               Configuration               |
+|    H10     |                --VCC--                 |             VQPS            |     Power     |              |                  |   BR  |             |                                           |
+|    H11     |                --VCC--                 |         VCC_SERDES01        |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    H12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    H13     |                --VCC--                 |         VCC_SERDES01        |     Power     |              |                  | Q0_Q1 |             |             Transceiver Power             |
+|    H14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    H15     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    H16     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    H17     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    H18     |               --UNUSED--               |           GPIOR_93          |     Input     |              |      1.8 V       |  TR2  | weak pullup |                  User IO                  |
+|    H19     |                --VCC--                 |         VCCIO33_TR2         |     Power     |              |      1.8 V       |  TR2  |             |                VCCIO Power                |
+|    H20     |               --UNUSED--               |           GPIOR_88          |     Input     |              |      1.8 V       |  TR2  | weak pullup |                  User IO                  |
+|    H21     |               --UNUSED--               |       GPIOR_78_PLLIN1       |     Input     |              |      1.8 V       |  TR1  | weak pullup |             User IO/PLL_CLKIN             |
+|    H22     |                 led[3]                 |           GPIOR_98          |     Output    | 3.3 V LVCMOS |      3.3 V       |  TR3  |             |                  User IO                  |
+|    H23     |               --UNUSED--               |          GPIOR_100          |     Input     |              |      3.3 V       |  TR3  | weak pullup |                  User IO                  |
+|    H24     |                 led[5]                 |          GPIOR_101          |     Output    | 3.3 V LVCMOS |      3.3 V       |  TR3  |             |                  User IO                  |
+|    H25     |               --CDI24--                |       GPIOT_N_36_CDI24      |               |              |      1.8 V       |   2C  |             |             User IO/PLL_EXTFB             |
+|    H26     |               --CDI25--                |    GPIOT_P_36_CDI25_EXTFB   |               |              |      1.8 V       |   2C  |             |             User IO/PLL_EXTFB             |
+|     J1     |               --CDI44--                |          GPIOB_N_08         |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     J2     |                --VCC--                 |           VCCIO4B           |     Power     |              |      1.8 V       |   4B  |             |                VCCIO Power                |
+|     J3     |                --CDI8--                |    GPIOB_N_16_CDI8_CLK3_N   |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     J4     |                --CDI9--                |    GPIOB_P_16_CDI9_CLK3_P   |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     J5     |                --CSI--                 |    GPIOB_N_28_CSI_CLK11_N   |               |              |      1.8 V       |   4A  |             |      User IO/GCLK/RCLK/Configuration      |
+|     J6     |               --UNUSED--               |    GPIOB_P_28_CSO_CLK11_P   |               |              |      1.8 V       |   4A  |             |             User IO/GCLK/RCLK             |
+|     J7     |                --TMS--                 |             TMS             |     Input     |              |      3.3 V       |  BR1  |             |               Configuration               |
+|     J8     |                --TDO--                 |             TDO             |     Output    |              |      3.3 V       |  BR1  |             |               Configuration               |
+|     J9     |                --VCC--                 |           VCCA_BR           |     Power     |              |                  |   BR  |             |              0.95 V PLL Power             |
+|    J10     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    J11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    J12     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    J13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    J14     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    J15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    J16     |                --VCC--                 |           VCCA_TR           |     Power     |              |                  |   TR  |             |              0.95 V PLL Power             |
+|    J17     |               --UNUSED--               |           GPIOR_91          |     Input     |              |      1.8 V       |  TR2  | weak pullup |                  User IO                  |
+|    J18     |               --UNUSED--               |           GPIOR_92          |     Input     |              |      1.8 V       |  TR2  | weak pullup |                  User IO                  |
+|    J19     |               --UNUSED--               |           GPIOR_85          |     Input     |              |      1.8 V       |  TR1  | weak pullup |                  User IO                  |
+|    J20     |                --VCC--                 |         VCCIO33_TR1         |     Power     |              |      1.8 V       |  TR1  |             |                VCCIO Power                |
+|    J21     |               --UNUSED--               |           GPIOR_79          |     Input     |              |      1.8 V       |  TR1  | weak pullup |                  User IO                  |
+|    J22     |                --VCC--                 |         VCCIO33_TR3         |     Power     |              |      3.3 V       |  TR3  |             |                VCCIO Power                |
+|    J23     |               --UNUSED--               |           GPIOR_95          |     Input     |              |      3.3 V       |  TR3  | weak pullup |                  User IO                  |
+|    J24     |               --CDI20--                |   GPIOT_N_38_CDI20_CLK14_N  |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    J25     |               --CDI21--                |   GPIOT_P_38_CDI21_CLK14_P  |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    J26     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     K1     |               --CDI14--                |       GPIOB_N_11_CDI14      |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     K2     |               --CDI15--                |       GPIOB_P_11_CDI15      |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     K3     |               --CDI10--                |   GPIOB_N_15_CDI10_CLK2_N   |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     K4     |               --CDI11--                |   GPIOB_P_15_CDI11_CLK2_P   |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     K5     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     K6     |               --CDI32--                |          GPIOB_N_22         |               |              |      1.8 V       |   4A  |             |             User IO/PLL_EXTFB             |
+|     K7     |               --CDI33--                |       GPIOB_P_22_EXTFB      |               |              |      1.8 V       |   4A  |             |             User IO/PLL_EXTFB             |
+|     K8     |                --VCC--                 |        JTAG_VCCIO_SEL       |     Power     |              |      1.8 V       |   4A  |             |                VCCIO Power                |
+|     K9     |               --UNUSED--               |          GPIOB_N_29         |               |              |      1.8 V       |   4A  |             |                  User IO                  |
+|    K10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    K11     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    K12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    K13     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    K14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    K15     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    K16     |               --UNUSED--               |          REF_RES_2C         |     Input     |              |      1.8 V       |   2C  |             |                                           |
+|    K17     |               --UNUSED--               |        GPIOR_81_CLK13       |     Input     |              |      1.8 V       |  TR1  | weak pullup |                User IO/GCLK               |
+|    K18     |               --UNUSED--               |           GPIOR_82          |     Input     |              |      1.8 V       |  TR1  | weak pullup |             User IO/MIPI_CLKIN            |
+|    K19     |               --UNUSED--               |           GPIOR_84          |     Input     |              |      1.8 V       |  TR1  | weak pullup |                  User IO                  |
+|    K20     |               --UNUSED--               |           GPIOR_83          |     Input     |              |      1.8 V       |  TR1  | weak pullup |                  User IO                  |
+|    K21     |               --UNUSED--               |        GPIOR_80_CLK12       |     Input     |              |      1.8 V       |  TR1  | weak pullup |                User IO/GCLK               |
+|    K22     |                 led[4]                 |           GPIOR_94          |     Output    | 3.3 V LVCMOS |      3.3 V       |  TR3  |             |                  User IO                  |
+|    K23     |               --CDI22--                |       GPIOT_N_37_CDI22      |               |              |      1.8 V       |   2C  |             |             User IO/PLL_CLKIN             |
+|    K24     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    K25     |               --UNUSED--               |      GPIOT_N_29_CLK22_N     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    K26     |               --UNUSED--               |          GPIOT_N_35         |               |              |      1.8 V       |   2C  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     L1     |               --UNUSED--               |          GPIOB_N_01         |               |              |      1.8 V       |   4B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     L2     |               --UNUSED--               |          GPIOB_P_01         |               |              |      1.8 V       |   4B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     L3     |                --VCC--                 |           VCCIO4B           |     Power     |              |      1.8 V       |   4B  |             |                VCCIO Power                |
+|     L4     |               --CDI39--                |      GPIOB_P_13_CLK0_P      |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     L5     |               --CDI42--                |          GPIOB_N_09         |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     L6     |               --CDI43--                |          GPIOB_P_09         |               |              |      1.8 V       |   4B  |             |                User IO/VREF               |
+|     L7     |                --VCC--                 |           VCCIO4A           |     Power     |              |      1.8 V       |   4A  |             |                VCCIO Power                |
+|     L8     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     L9     |               --UNUSED--               |          REF_RES_4A         |     Input     |              |      1.8 V       |   4A  |             |                                           |
+|    L10     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    L11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    L12     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|    L13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    L14     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    L15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    L16     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|    L17     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    L18     |               --UNUSED--               |          GPIOT_N_33         |               |              |      1.8 V       |   2C  |             |             User IO/PLL_EXTFB             |
+|    L19     |               --UNUSED--               |       GPIOT_P_33_EXTFB      |               |              |      1.8 V       |   2C  |             |             User IO/PLL_EXTFB             |
+|    L20     |               --UNUSED--               |          GPIOT_N_34         |               |              |      1.8 V       |   2C  |             |             User IO/PLL_CLKIN             |
+|    L21     |               --UNUSED--               |      GPIOT_P_34_PLLIN0      |               |              |      1.8 V       |   2C  |             |             User IO/PLL_CLKIN             |
+|    L22     |                --VCC--                 |           VCCIO2C           |     Power     |              |      1.8 V       |   2C  |             |                VCCIO Power                |
+|    L23     |               --CDI23--                |   GPIOT_P_37_CDI23_PLLIN0   |               |              |      1.8 V       |   2C  |             |             User IO/PLL_CLKIN             |
+|    L24     |               --CDI26--                |       GPIOT_N_32_CDI26      |               |              |      1.8 V       |   2C  |             |                  User IO                  |
+|    L25     |               --UNUSED--               |      GPIOT_P_29_CLK22_P     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    L26     |               --UNUSED--               |          GPIOT_P_35         |               |              |      1.8 V       |   2C  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     M1     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     M2     |               --UNUSED--               |       GPIOB_P_02_EXTFB      |               |              |      1.8 V       |   4B  |             |             User IO/PLL_EXTFB             |
+|     M3     |               --CDI47--                |          GPIOB_P_05         |               |              |      1.8 V       |   4B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     M4     |               --CDI38--                |      GPIOB_N_13_CLK0_N      |               |              |      1.8 V       |   4B  |             |                User IO/GCLK               |
+|     M5     |               --CDI19--                |   GPIOB_P_06_CDI19_PLLIN0   |               |              |      1.8 V       |   4B  |             |             User IO/PLL_CLKIN             |
+|     M6     |                --VCC--                 |           VCCIO4B           |     Power     |              |      1.8 V       |   4B  |             |                VCCIO Power                |
+|     M7     |               --CDI12--                |       GPIOB_N_12_CDI12      |               |              |      1.8 V       |   4B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     M8     |               --CDI13--                |       GPIOB_P_12_CDI13      |               |              |      1.8 V       |   4B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     M9     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|    M10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    M11     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    M12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    M13     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    M14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    M15     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    M16     |                --VCC--                 |           VCCIO2C           |     Power     |              |      1.8 V       |   2C  |             |                VCCIO Power                |
+|    M17     |               --UNUSED--               |      GPIOT_N_30_CLK23_N     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    M18     |               --UNUSED--               |      GPIOT_P_30_CLK23_P     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    M19     |               --UNUSED--               |      GPIOT_N_27_CLK21_N     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    M20     |                --VCC--                 |           VCCIO2C           |     Power     |              |      1.8 V       |   2C  |             |                VCCIO Power                |
+|    M21     |               --CDI30--                |       GPIOT_N_28_CDI30      |               |              |      1.8 V       |   2C  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    M22     |               --CDI28--                |       GPIOT_N_31_CDI28      |               |              |      1.8 V       |   2C  |             |                  User IO                  |
+|    M23     |               --CDI29--                |       GPIOT_P_31_CDI29      |               |              |      1.8 V       |   2C  |             |                  User IO                  |
+|    M24     |               --CDI27--                |       GPIOT_P_32_CDI27      |               |              |      1.8 V       |   2C  |             |                User IO/VREF               |
+|    M25     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    M26     |               --UNUSED--               |      GPIOT_N_25_CLK19_N     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|     N1     |               --UNUSED--               |      GPIOB_P_00_PLLIN0      |               |              |      1.8 V       |   4B  |             |             User IO/PLL_CLKIN             |
+|     N2     |               --UNUSED--               |          GPIOB_N_02         |               |              |      1.8 V       |   4B  |             |             User IO/PLL_EXTFB             |
+|     N3     |               --CDI46--                |          GPIOB_N_05         |               |              |      1.8 V       |   4B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|     N4     |                --VCC--                 |           VCCIO4B           |     Power     |              |      1.8 V       |   4B  |             |                VCCIO Power                |
+|     N5     |               --CDI18--                |       GPIOB_N_06_CDI18      |               |              |      1.8 V       |   4B  |             |             User IO/PLL_CLKIN             |
+|     N6     |               --CDI40--                |          GPIOB_N_10         |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     N7     |               --CDI41--                |          GPIOB_P_10         |               |              |      1.8 V       |   4B  |             |                  User IO                  |
+|     N8     |               --CDI17--                |    GPIOB_P_07_CDI17_EXTFB   |               |              |      1.8 V       |   4B  |             |             User IO/PLL_EXTFB             |
+|     N9     |               --UNUSED--               |          REF_RES_4B         |     Input     |              |      1.8 V       |   4B  |             |                                           |
+|    N10     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    N11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    N12     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    N13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    N14     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    N15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    N16     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|    N17     |               --CDI54--                |          GPIOT_N_17         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    N18     |                --VCC--                 |           VCCIO2B           |     Power     |              |      1.8 V       |   2B  |             |                VCCIO Power                |
+|    N19     |               --UNUSED--               |      GPIOT_P_27_CLK21_P     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    N20     |               --CDI50--                |          GPIOT_N_19         |               |              |      1.8 V       |   2B  |             |             User IO/PLL_EXTFB             |
+|    N21     |               --CDI31--                |       GPIOT_P_28_CDI31      |               |              |      1.8 V       |   2C  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    N22     |               --UNUSED--               |      GPIOT_N_26_CLK20_N     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    N23     |                --VCC--                 |           VCCIO2C           |     Power     |              |      1.8 V       |   2C  |             |                VCCIO Power                |
+|    N24     |               --UNUSED--               |      GPIOT_N_24_CLK18_N     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|    N25     |               --UNUSED--               |          GPIOT_N_21         |               |              |      1.8 V       |   2B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    N26     |               --UNUSED--               |      GPIOT_P_25_CLK19_P     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|     P1     |               --UNUSED--               |          GPIOB_N_00         |               |              |      1.8 V       |   4B  |             |             User IO/PLL_CLKIN             |
+|     P2     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     P3     |               --CDI48--                |          GPIOB_N_04         |               |              |      1.8 V       |   4B  |             |             User IO/PLL_EXTFB             |
+|     P4     |               --UNUSED--               |       GPIOB_P_04_EXTFB      |               |              |      1.8 V       |   4B  |             |             User IO/PLL_EXTFB             |
+|     P5     |               --UNUSED--               |          GPIOB_N_03         |               |              |      1.8 V       |   4B  |             |             User IO/PLL_CLKIN             |
+|     P6     |               --UNUSED--               |      GPIOB_P_03_PLLIN0      |               |              |      1.8 V       |   4B  |             |             User IO/PLL_CLKIN             |
+|     P7     |                --VCC--                 |           VCCIO4B           |     Power     |              |      1.8 V       |   4B  |             |                VCCIO Power                |
+|     P8     |               --CDI16--                |       GPIOB_N_07_CDI16      |               |              |      1.8 V       |   4B  |             |             User IO/PLL_EXTFB             |
+|     P9     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|    P10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    P11     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    P12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    P13     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    P14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    P15     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    P16     |                --VCC--                 |           VCCIO2B           |     Power     |              |      1.8 V       |   2B  |             |                VCCIO Power                |
+|    P17     |               --CDI55--                |          GPIOT_P_17         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    P18     |               --UNUSED--               |          GPIOT_N_20         |               |              |      1.8 V       |   2B  |             |             User IO/PLL_CLKIN             |
+|    P19     |        --CDI49-- / gpio_inst1.P        |      GPIOT_P_20_PLLIN0      |     Input     | 1.8 V LVCMOS |      1.8 V       |   2B  |             |             User IO/PLL_CLKIN             |
+|    P20     |               --CDI51--                |       GPIOT_P_19_EXTFB      |               |              |      1.8 V       |   2B  |             |             User IO/PLL_EXTFB             |
+|    P21     |                --VCC--                 |           VCCIO2B           |     Power     |              |      1.8 V       |   2B  |             |                VCCIO Power                |
+|    P22     |               --UNUSED--               |      GPIOT_P_26_CLK20_P     |               |              |      1.8 V       |   2C  |             |                User IO/GCLK               |
+|    P23     |               --UNUSED--               |      GPIOT_N_23_CLK17_N     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|    P24     |               --UNUSED--               |      GPIOT_P_24_CLK18_P     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|    P25     |               --UNUSED--               |          GPIOT_P_21         |               |              |      1.8 V       |   2B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    P26     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     R1     |               --UNUSED--               |       GPIOL_34_PLLIN1       |     Input     |              |      3.3 V       |  BL3  | weak pullup |             User IO/PLL_CLKIN             |
+|     R2     |               --UNUSED--               |           GPIOL_33          |     Input     |              |      3.3 V       |  BL3  | weak pullup |                  User IO                  |
+|     R3     |               --UNUSED--               |       GPIOL_32_PLLIN1       |     Input     |              |      3.3 V       |  BL3  | weak pullup |             User IO/PLL_CLKIN             |
+|     R4     |               --UNUSED--               |           GPIOL_31          |     Input     |              |      3.3 V       |  BL3  | weak pullup |                  User IO                  |
+|     R5     |                --VCC--                 |         VCCIO33_BL3         |     Power     |              |      3.3 V       |  BL3  |             |                VCCIO Power                |
+|     R6     |               --UNUSED--               |           GPIOL_29          |     Input     |              |      3.3 V       |  BL3  | weak pullup |                  User IO                  |
+|     R7     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     R8     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|     R9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    R10     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    R11     |                --VCC--                 |           VCCA_BL2          |     Power     |              |                  |   BL  |             |              0.95 V PLL Power             |
+|    R12     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    R13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    R14     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    R15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    R16     |                --VCC--                 |            VCCAUX           |     Power     |              |                  |       |             |                                           |
+|    R17     |               --UNUSED--               |          GPIOT_N_08         |               |              |      1.8 V       |   2A  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    R18     |               --UNUSED--               |          GPIOT_P_08         |               |              |      1.8 V       |   2A  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    R19     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    R20     |               --CDI62--                |          GPIOT_N_13         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    R21     |               --UNUSED--               |      GPIOT_N_22_CLK16_N     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|    R22     |               --UNUSED--               |      GPIOT_P_22_CLK16_P     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|    R23     |               --UNUSED--               |      GPIOT_P_23_CLK17_P     |               |              |      1.8 V       |   2B  |             |                User IO/GCLK               |
+|    R24     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    R25     |               --CDI52--                |          GPIOT_N_18         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    R26     |               --CDI53--                |          GPIOT_P_18         |               |              |      1.8 V       |   2B  |             |                User IO/VREF               |
+|     T1     |                 led[1]                 |           GPIOL_28          |     Output    | 3.3 V LVCMOS |      3.3 V       |  BL3  |             |                  User IO                  |
+|     T2     |                 led[2]                 |        GPIOL_27_CLK25       |     Output    | 3.3 V LVCMOS |      3.3 V       |  BL3  |             |                User IO/GCLK               |
+|     T3     |               --UNUSED--               |        GPIOL_26_CLK24       |     Input     |              |      3.3 V       |  BL3  | weak pullup |                User IO/GCLK               |
+|     T4     |               --UNUSED--               |           GPIOL_30          |     Input     |              |      3.3 V       |  BL3  | weak pullup |                  User IO                  |
+|     T5     |              ddr0_refclk               |       GPIOL_25_PLLIN1       |     Input     | 1.8 V LVCMOS |      1.8 V       |  BL2  |             |             User IO/PLL_CLKIN             |
+|     T6     |               --UNUSED--               |           GPIOL_24          |     Input     |              |      1.8 V       |  BL2  | weak pullup |                  User IO                  |
+|     T7     |                --VCC--                 |         VCCIO33_BL2         |     Power     |              |      1.8 V       |  BL2  |             |                VCCIO Power                |
+|     T8     |                --VCC--                 |           VDD_SOC           |     Power     |              |                  |  SOC  |             |                                           |
+|     T9     |                --VCC--                 |           VDD_SOC           |     Power     |              |                  |  SOC  |             |                                           |
+|    T10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    T11     |                --VCC--                 |         VCCA_BL0_BL1        |     Power     |              |                  |   BL  |             |              0.95 V PLL Power             |
+|    T12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    T13     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    T14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    T15     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    T16     |               --UNUSED--               |          REF_RES_2A         |     Input     |              |      1.8 V       |   2A  |             |                                           |
+|    T17     |                --VCC--                 |           VCCIO2A           |     Power     |              |      1.8 V       |   2A  |             |                VCCIO Power                |
+|    T18     |               --UNUSED--               |          GPIOT_N_02         |               |              |      1.8 V       |   2A  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    T19     |               --UNUSED--               |          GPIOT_P_02         |               |              |      1.8 V       |   2A  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    T20     |               --CDI63--                |          GPIOT_P_13         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    T21     |               --CDI56--                |          GPIOT_N_16         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    T22     |                --VCC--                 |           VCCIO2B           |     Power     |              |      1.8 V       |   2B  |             |                VCCIO Power                |
+|    T23     |               --CDI60--                |          GPIOT_N_14         |               |              |      1.8 V       |   2B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    T24     |               --CDI61--                |          GPIOT_P_14         |               |              |      1.8 V       |   2B  |             |        User IO/MIPI_GCLK/MIPI_RCLK        |
+|    T25     |               --CDI58--                |          GPIOT_N_15         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    T26     |               --CDI59--                |          GPIOT_P_15         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|     U1     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     U2     |               --UNUSED--               |         MIPI0_RXDP0         |               |              |                  |   BL  |             |                                           |
+|     U3     |               --UNUSED--               |           GPIOL_17          |     Input     |              |      3.3 V       |  BL1  | weak pullup |                  User IO                  |
+|     U4     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     U5     |               --UNUSED--               |           GPIOL_23          |     Input     |              |      1.8 V       |  BL2  | weak pullup |             User IO/MIPI_CLKIN            |
+|     U6     |               --UNUSED--               |           GPIOL_20          |     Input     |              |      1.8 V       |  BL2  | weak pullup |                  User IO                  |
+|     U7     |               --UNUSED--               |           GPIOL_21          |     Input     |              |      1.8 V       |  BL2  | weak pullup |                  User IO                  |
+|     U8     |                --VCC--                 |           VDD_SOC           |     Power     |              |                  |  SOC  |             |                                           |
+|     U9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    U10     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    U11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    U12     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    U13     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    U14     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    U15     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    U16     |               --UNUSED--               |           GPIOL_63          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    U17     |               --UNUSED--               |           GPIOL_64          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    U18     |               --UNUSED--               |      GPIOT_N_01_CLK27_N     |               |              |      1.8 V       |   2A  |             |                User IO/GCLK               |
+|    U19     |               --UNUSED--               |      GPIOT_P_01_CLK27_P     |               |              |      1.8 V       |   2A  |             |                User IO/GCLK               |
+|    U20     |                --VCC--                 |           VCCIO2A           |     Power     |              |      1.8 V       |   2A  |             |                VCCIO Power                |
+|    U21     |               --CDI57--                |          GPIOT_P_16         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    U22     |               --UNUSED--               |          GPIOT_N_07         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|    U23     |               --UNUSED--               |          GPIOT_N_12         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    U24     |               --UNUSED--               |          GPIOT_P_12         |               |              |      1.8 V       |   2B  |             |                  User IO                  |
+|    U25     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    U26     |               --UNUSED--               |          GPIOT_N_11         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|     V1     |               --UNUSED--               |         MIPI0_RXDP1         |               |              |                  |   BL  |             |                                           |
+|     V2     |               --UNUSED--               |         MIPI0_RXDN1         |               |              |                  |   BL  |             |                                           |
+|     V3     |               --UNUSED--               |         MIPI0_RXDN0         |               |              |                  |   BL  |             |                                           |
+|     V4     |               --UNUSED--               |           GPIOL_16          |     Input     |              |      3.3 V       |  BL1  | weak pullup |                  User IO                  |
+|     V5     |                uart_rxd                |           GPIOL_10          |     Input     | 3.3 V LVCMOS |      3.3 V       |  BL1  |             |                  User IO                  |
+|     V6     |                uart_txd                |           GPIOL_11          |     Output    | 3.3 V LVCMOS |      3.3 V       |  BL1  |             |                  User IO                  |
+|     V7     |               --UNUSED--               |           GPIOL_13          |     Input     |              |      3.3 V       |  BL1  | weak pullup |                  User IO                  |
+|     V8     |                --VCC--                 |         VCCIO33_BL1         |     Power     |              |      3.3 V       |  BL1  |             |                VCCIO Power                |
+|     V9     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    V10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    V11     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    V12     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    V13     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    V14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    V15     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    V16     |                --VCC--                 |           VCCA_TL           |     Power     |              |                  |   TL  |             |              0.95 V PLL Power             |
+|    V17     |               --UNUSED--               |           GPIOL_65          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    V18     |                --VCC--                 |         VCCIO33_TL3         |     Power     |              |      1.8 V       |  TL3  |             |                VCCIO Power                |
+|    V19     |               --UNUSED--               |       GPIOL_72_PLLIN1       |     Input     |              |      1.8 V       |  TL3  | weak pullup |             User IO/PLL_CLKIN             |
+|    V20     |               --UNUSED--               |      GPIOT_N_04_CLK31_N     |               |              |      1.8 V       |   2A  |             |                User IO/GCLK               |
+|    V21     |               --UNUSED--               |      GPIOT_P_04_CLK31_P     |               |              |      1.8 V       |   2A  |             |                User IO/GCLK               |
+|    V22     |               --UNUSED--               |          GPIOT_P_07         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|    V23     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    V24     |               --UNUSED--               |          GPIOT_N_09         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|    V25     |               --UNUSED--               |          GPIOT_N_10         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|    V26     |               --UNUSED--               |          GPIOT_P_11         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|     W1     |               --UNUSED--               |         MIPI0_RXDP2         |               |              |                  |   BL  |             |                                           |
+|     W2     |                --VCC--                 |       VCC18A_MIPI0_RX       |     Power     |              |                  |   BL  |             |                                           |
+|     W3     |               --UNUSED--               |         MIPI0_RXDP3         |               |              |                  |   BL  |             |                                           |
+|     W4     |               --UNUSED--               |         MIPI0_RXDP4         |               |              |                  |   BL  |             |                                           |
+|     W5     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     W6     |                 sw[0]                  |           GPIOL_00          |     Input     | 3.3 V LVCMOS |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|     W7     |               --UNUSED--               |           GPIOL_02          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|     W8     |               --UNUSED--               |           GPIOL_12          |     Input     |              |      3.3 V       |  BL1  | weak pullup |                  User IO                  |
+|     W9     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    W10     |                --VCC--                 |             VCC             |     Power     |              |                  |       |             |              0.95 V VCC Power             |
+|    W11     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    W12     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    W13     |                --VCC--                 |       VDDQ_CK_PHY_DDR       |     Power     |              |                  |  DDR  |             |                                           |
+|    W14     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    W15     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    W16     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    W17     |               --UNUSED--               |           GPIOL_69          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    W18     |               --UNUSED--               |           GPIOL_66          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    W19     |               --UNUSED--               |           GPIOL_71          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    W20     |               --UNUSED--               |           GPIOL_59          |     Input     |              |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    W21     |                --VCC--                 |           VCCIO2A           |     Power     |              |      1.8 V       |   2A  |             |                VCCIO Power                |
+|    W22     |               --UNUSED--               |          GPIOT_N_05         |               |              |      1.8 V       |   2A  |             |             User IO/PLL_CLKIN             |
+|    W23     |               --UNUSED--               |      GPIOT_P_05_PLLIN0      |               |              |      1.8 V       |   2A  |             |           User IO/PLL_CLKIN/VREF          |
+|    W24     |               --UNUSED--               |          GPIOT_P_09         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|    W25     |               --UNUSED--               |          GPIOT_P_10         |               |              |      1.8 V       |   2A  |             |                  User IO                  |
+|    W26     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     Y1     |               --UNUSED--               |         MIPI0_TXDP0         |               |              |                  |   BL  |             |                                           |
+|     Y2     |               --UNUSED--               |         MIPI0_RXDN2         |               |              |                  |   BL  |             |                                           |
+|     Y3     |               --UNUSED--               |         MIPI0_RXDN3         |               |              |                  |   BL  |             |                                           |
+|     Y4     |               --UNUSED--               |         MIPI0_RXDN4         |               |              |                  |   BL  |             |                                           |
+|     Y5     |                 led[0]                 |           GPIOL_01          |     Output    | 3.3 V LVCMOS |      3.3 V       |  BL0  |             |                  User IO                  |
+|     Y6     |               --UNUSED--               |           GPIOL_03          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|     Y7     |               --UNUSED--               |           GPIOL_04          |     Input     |              |      3.3 V       |  BL0  | weak pullup |                  User IO                  |
+|     Y8     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|     Y9     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    Y10     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    Y11     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    Y12     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    Y13     |                --VCC--                 |    VDDPLL_MCB_TOP_PHY_DDR   |     Power     |              |                  |  DDR  |             |                                           |
+|    Y14     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    Y15     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    Y16     |                --VCC--                 |         VDD_PHY_DDR         |     Power     |              |                  |  DDR  |             |                                           |
+|    Y17     |               --UNUSED--               |           GPIOL_70          |     Input     |              |      1.8 V       |  TL3  | weak pullup |                  User IO                  |
+|    Y18     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    Y19     |                --VCC--                 |         VCCIO33_TL2         |     Power     |              |      3.3 V       |  TL2  |             |                VCCIO Power                |
+|    Y20     |               --UNUSED--               |           GPIOL_60          |     Input     |              |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    Y21     |                cam_scl                 |           GPIOL_55          | Bidirectional | 3.3 V LVCMOS |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    Y22     |               --UNUSED--               |           GPIOL_54          |     Input     |              |      3.3 V       |  TL2  | weak pullup |                  User IO                  |
+|    Y23     |                 cam_en                 |           GPIOL_53          |     Output    | 3.3 V LVCMOS |      3.3 V       |  TL2  |             |                  User IO                  |
+|    Y24     |                --GND--                 |             GND             |     Power     |              |                  |       |             |                   Ground                  |
+|    Y25     |               --UNUSED--               |          GPIOT_N_06         |               |              |      1.8 V       |   2A  |             |             User IO/PLL_EXTFB             |
+|    Y26     |               --UNUSED--               |       GPIOT_P_06_EXTFB      |               |              |      1.8 V       |   2A  |             |             User IO/PLL_EXTFB             |
++------------+----------------------------------------+-----------------------------+---------------+--------------+------------------+-------+-------------+-------------------------------------------+

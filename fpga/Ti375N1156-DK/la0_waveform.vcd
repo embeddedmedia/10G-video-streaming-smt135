@@ -1,0 +1,39 @@
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 1 0 w_cfg_done $end
+$var wire 1 1 w_cam_active $end
+$var wire 1 2 inst_sapphire/system_i2c_0_io_scl_write $end
+$var wire 1 3 inst_sapphire/system_i2c_0_io_sda_write $end
+$var wire 1 4 inst_sapphire/system_i2c_0_io_sda_read $end
+$var wire 1 5 inst_sapphire/system_i2c_0_io_scl_read $end
+$var wire 1 6 cam_en $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x0
+x1
+x2
+x3
+x4
+x5
+x6
+$end
+#0 $dumpon
+10
+01
+12
+13
+04
+05
+16
+#65535
+10
+01
+12
+13
+04
+05
+16
+$end

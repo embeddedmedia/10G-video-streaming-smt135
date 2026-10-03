@@ -1,0 +1,128 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2026.1.132.4.5 
+Date: Sat Oct  3 18:55:44 2026
+
+Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti135N676
+Top-level Entity Name: videostream
+
+---------- IO Interface Summary (begin) ----------
+
++----------------------------------+--------------+
+|      Missing Interface Pins      | Input/Output |
++----------------------------------+--------------+
+|      ddr_CTRL_PORT_BUSY[0]       |    Input     |
+|      ddr_CTRL_PORT_BUSY[1]       |    Input     |
+|         ddr_CTRL_CKE[0]          |    Input     |
+|         ddr_CTRL_CKE[1]          |    Input     |
+|          ddr_CTRL_BUSY           |    Input     |
+|         ddr_CTRL_REFRESH         |    Input     |
+|      ddr_CTRL_MEM_RST_VALID      |    Input     |
+|           ddr_CTRL_INT           |    Input     |
+|        pll_inst2_CLKOUT0         |    Input     |
+|          ddr_RRESP_0[1]          |    Input     |
+|           ddr_RID_0[0]           |    Input     |
+|           ddr_RID_0[2]           |    Input     |
+|           ddr_RID_0[3]           |    Input     |
+|           ddr_RID_0[4]           |    Input     |
+|          ddr_BRESP_0[0]          |    Input     |
+|          ddr_BRESP_0[1]          |    Input     |
+|           ddr_BID_0[1]           |    Input     |
+|           ddr_BID_0[2]           |    Input     |
+|           ddr_BID_0[3]           |    Input     |
+|           ddr_BID_0[5]           |    Input     |
+|         ddr_CTRL_DP_IDLE         |    Input     |
+|    ddr_CTRL_CMD_Q_ALMOST_FULL    |    Input     |
+|          ddr_RRESP_0[0]          |    Input     |
+|           ddr_RID_0[1]           |    Input     |
+|           ddr_RID_0[5]           |    Input     |
+|           ddr_BID_0[0]           |    Input     |
+|           ddr_BID_0[4]           |    Input     |
+|              sw[1]               |    Input     |
+|         osc_inst1_CLKOUT         |    Input     |
+|  dphy_rx1_ERR_SOT_SYNC_HS_LAN1   |    Input     |
+|     dphy_rx1_ERR_SOT_HS_LAN1     |    Input     |
+|         jtag_inst1_DRCK          |    Input     |
+|        jtag_inst1_RUNTEST        |    Input     |
+|   dphy_rx1_RX_SKEW_CAL_HS_LAN1   |    Input     |
+|    dphy_rx1_ERR_CONTROL_LAN1     |    Input     |
+|    dphy_rx1_RX_ACTIVE_HS_LAN1    |    Input     |
+|          jtag_inst1_TMS          |    Input     |
+|    jtag_inst2_autodbg_DRCK__     |    Input     |
+|      dphy_rx1_ERR_ESC_LAN1       |    Input     |
+| dphy_rx1_RX_ULPS_ACTIVE_NOT_LAN1 |    Input     |
+|   jtag_inst2_autodbg_RUNTEST__   |    Input     |
+|  dphy_rx1_ERR_SOT_SYNC_HS_LAN0   |    Input     |
+|    dphy_rx1_RX_ULPS_ESC_LAN1     |    Input     |
+|     jtag_inst2_autodbg_TMS__     |    Input     |
+|     dphy_rx1_ERR_SOT_HS_LAN0     |    Input     |
+|   dphy_rx1_RX_SKEW_CAL_HS_LAN0   |    Input     |
+|    dphy_rx1_ERR_CONTROL_LAN0     |    Input     |
+|    dphy_rx1_RX_ACTIVE_HS_LAN0    |    Input     |
+|   dphy_rx1_ERR_CONTENTION_LP1    |    Input     |
+|   dphy_rx1_ERR_CONTENTION_LP0    |    Input     |
+| dphy_rx1_RX_ULPS_ACTIVE_NOT_LAN0 |    Input     |
+|      dphy_rx1_ERR_ESC_LAN0       |    Input     |
+|     dphy_rx1_RX_DATA_ESC[2]      |    Input     |
+|      dphy_rx1_RX_VALID_ESC       |    Input     |
+|     dphy_rx1_RX_DATA_ESC[0]      |    Input     |
+|     dphy_rx1_RX_DATA_ESC[1]      |    Input     |
+|     dphy_rx1_RX_DATA_ESC[6]      |    Input     |
+|     dphy_rx1_RX_DATA_ESC[3]      |    Input     |
+|     dphy_rx1_RX_DATA_ESC[4]      |    Input     |
+|     dphy_rx1_RX_DATA_ESC[5]      |    Input     |
+|    dphy_rx1_RX_TRIGGER_ESC[2]    |    Input     |
+|     dphy_rx1_RX_DATA_ESC[7]      |    Input     |
+|    dphy_rx1_RX_TRIGGER_ESC[0]    |    Input     |
+|    dphy_rx1_RX_TRIGGER_ESC[1]    |    Input     |
+|    dphy_rx1_RX_TRIGGER_ESC[3]    |    Input     |
+|    dphy_rx1_RX_ULPS_ESC_LAN0     |    Input     |
+|       dphy_rx1_RX_LPDT_ESC       |    Input     |
+|         dphy_rx1_LP_CLK          |    Input     |
+|    dphy_rx1_RX_CLK_ACTIVE_HS     |    Input     |
+| dphy_rx1_RX_ULPS_ACTIVE_CLK_NOT  |    Input     |
+|      dphy_rx1_STOPSTATE_CLK      |    Input     |
+|     dphy_rx1_RX_ULPS_CLK_NOT     |    Input     |
+|             sfp0_IRQ             |    Input     |
+|           sfp0_HI_BER            |    Input     |
+|         sfp0_PCS_STATUS          |    Input     |
+|        sfp0_PHY_INTERRUPT        |    Input     |
++----------------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+
+---------- Module Resource Usage Distribution Estimates (begin) ----------
+
+'Module Resource Usage Distribution Estimates' table printed in: /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.hier_util.rpt
+
+----------- Module Resource Usage Distribution Estimates (end) ----------
+
+Elapsed time for packing: 0 hours 0 minutes 7 seconds
+---------- Resource Summary (begin) ----------
+Inputs: 696 / 6599 (10.55%)
+Outputs: 882 / 7443 (11.85%)
+Global Clocks (GBUF): 7 / 32 (21.88%)
+Regional Clocks (RBUF): 0 / 40 (0.00%)
+	RBUF: Core: 0 / 24 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 29970 / 129600 (23.12%)
+	XLRs needed for LUT4: 14595 / 129600 (11.26%)
+	XLRs needed for LUT4 + FF: 5492 / 129600 (4.24%)
+	XLRs needed for COMB4: 0 / 129600 (0.00%)
+	XLRs needed for COMB4 + FF: 0 / 129600 (0.00%)
+	XLRs needed for Adder: 1779 / 129600 (1.37%)
+	XLRs needed for Adder + FF: 804 / 129600 (0.62%)
+	XLRs needed for SRL8: 64 / 24000 (0.27%)
+	XLRs needed for SRL8 + FF: 0 / 24000 (0.00%)
+	XLRs needed for FF: 7236 / 129600 (5.58%)
+	XLRs needed for Routing: 0 / 129600 (0.00%)
+Memory Blocks: 506 / 960 (52.71%)
+DSP Blocks: 10 / 480 (2.08%)
+---------- Resource Summary (end) ----------
+
+Elapsed time for placement: 0 hours 1 minutes 7 seconds

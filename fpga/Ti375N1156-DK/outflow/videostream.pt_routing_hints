@@ -1,0 +1,51 @@
+
+# Efinity Interface Routing Info
+# Version: 2026.1.132.4.5
+# Date: 2026-10-03 18:55
+
+# Copyright (C) 2013 - 2026 Efinix Inc. All rights reserved.
+
+path {
+	element {routing_blk: "MIPI_RX1" routing_pin: "WORD_CLKOUT_HS" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "RESERVED0" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "TOP_3" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "BOT_0" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "OUT[0]" }
+}
+path {
+	element {routing_blk: "OSC_0" routing_pin: "CLKOUT" }
+	element {routing_blk: "GCLKMUX_B" routing_pin: "RESERVED0" }
+	element {routing_blk: "GCLKMUX_B" routing_pin: "TOP_3" }
+	element {routing_blk: "GCLKMUX_B" routing_pin: "BOT_0" }
+	element {routing_blk: "GCLKMUX_B" routing_pin: "OUT[0]" }
+}
+path {
+	element {routing_blk: "PLL_BL0" routing_pin: "CLKOUT0" }
+	element {routing_blk: "GCLKMUX_L" routing_pin: "PLL0[0]" }
+	element {routing_blk: "GCLKMUX_L" routing_pin: "BOT_3" }
+	element {routing_blk: "GCLKMUX_L" routing_pin: "OUT[3]" }
+}
+path {
+	element {routing_blk: "PLL_TR0" routing_pin: "CLKOUT0" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "PLL0[0]" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "BOT_3" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "OUT[3]" }
+}
+path {
+	element {routing_blk: "PLL_TR0" routing_pin: "CLKOUT1" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "PLL0[1]" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "BOT_6" }
+	element {routing_blk: "GCLKMUX_T" routing_pin: "OUT[6]" }
+}
+path {
+	element {routing_blk: "XCVR_CLKMUX_0" routing_pin: "OUT[0]" }
+	element {routing_blk: "GCLKMUX_R" routing_pin: "MIPI_CLK0" }
+	element {routing_blk: "GCLKMUX_R" routing_pin: "TOP_3" }
+	element {routing_blk: "GCLKMUX_R" routing_pin: "BOT_0" }
+	element {routing_blk: "GCLKMUX_R" routing_pin: "OUT[0]" }
+}
+path {
+	element {routing_blk: "sfp0" routing_pin: "CH0_TX_FWD_CLK" }
+	element {routing_blk: "XCVR_CLKMUX_0" routing_pin: "IN[0]" }
+	element {routing_blk: "XCVR_CLKMUX_0" routing_pin: "OUT[0]" }
+}

@@ -1,0 +1,6 @@
+numpy==1.26.4
+psutil
+pygame==2.6.0
+pygame-widgets==1.1.5
+PySocks
+opencv-python==4.10.0.84

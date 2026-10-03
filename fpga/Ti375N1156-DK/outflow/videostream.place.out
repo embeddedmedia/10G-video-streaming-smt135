@@ -1,0 +1,722 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2026.1.132.4.5 
+           Compiled: May 29 2026.
+           
+           Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+WARNING  : Found 99 warnings in the post-synthesis netlist.
+INFO     : Reading core interface constraints file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Creating interface clock pin pll_inst1_CLKOUT0 [DBMsg::NetlistInterfaceClockPinCreated]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[0]~FF #23984 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[1]~FF #23985 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[2]~FF #23986 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[3]~FF #23987 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[4]~FF #23988 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[5]~FF #23989 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[0]~FF #23984 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[1]~FF #23985 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[2]~FF #23986 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[3]~FF #23987 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[4]~FF #23988 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block inst_sapphire/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/lineLoader_address[5]~FF #23989 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Reading core interface constraints file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+WARNING  : Clock source "jtag_inst1_TCK" does not use a dedicated clock pad, extra clock insertion delay will been added
+WARNING  : Clock source "jtag_inst2_autodbg_TCK__" does not use a dedicated clock pad, extra clock insertion delay will been added
+INFO     : Counting 3 clocks that are not assigned to clock resources as global clocks.
+INFO     : XLR count after merging: 29970
+INFO     : Netlist has 20087 luts, 13532 ffs and 2583 adders [PackerMsg::NetlistStatistics]
+INFO     : Packed into 29970 clusters with 2.60317(1.0376042) inputs(outputs) per cluster for a total of 78017(31097) inputs(outputs) [PackerMsg::ClusterPackingStatistics]
+INFO     : Packed into 29970 xlrs with 2.60317(1.0376042) inputs(outputs) per xlr for a total of 78017(31097) inputs(outputs) [PackerMsg::XLRPackingStatistics]
+INFO     : Packed 0 fracturable DSPs into 0 clusters [PackerMsg::DSPPackingStatistics]
+INFO     : Packing took 7.84711803 seconds [FlowMsg::StageDuration]
+INFO     :     Packing took 13.3 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Packing virtual memory usage: begin = 177.236 MB, end = 485.824 MB, delta = 308.588 MB [FlowMsg::VMUsage]
+INFO     : Packing resident set memory usage: begin = 87.384 MB, end = 347.608 MB, delta = 260.224 MB [FlowMsg::RSSUsage]
+INFO     :     Packing peak resident set memory usage = 347.608 MB [FlowMsg::RSSUsage::Peak]
+WARNING  : No ports matched 'osc_inst1_CLKOUT'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:19] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:19] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_DRCK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:24] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:24] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'pll_inst2_CLKOUT0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:25] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:25] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_LP_CLK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:29] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:65] A clock with name 'dphy_rx1_SLOWCLK' already exists. Overwriting the previous clock with the same name
+WARNING  : No ports matched 'dphy_rx1_LP_CLK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:66] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:66] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:81] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:81] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:82] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:82] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:83] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:83] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:84] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:84] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:85] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:85] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:86] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:86] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:87] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:87] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:88] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:88] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:89] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:89] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:90] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:90] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:91] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:91] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:92] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:92] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:97] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:97] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:98] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:98] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:99] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:99] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:100] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:100] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_DRCK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:130] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:130] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_DRCK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:131] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:131] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:139] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:139] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:139] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:140] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:140] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:140] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:141] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:141] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:141] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:142] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:142] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:142] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:143] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:143] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:143] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:144] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:144] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:144] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:145] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:145] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:145] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:146] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:146] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:146] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:147] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:147] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:147] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:148] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:148] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:148] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:149] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:149] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:149] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:150] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:150] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:150] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_autodbg_DRCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:151] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:151] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:151] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_autodbg_DRCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:152] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:152] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:152] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:223] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:223] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:224] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:224] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:225] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:225] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:226] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:226] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:231] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:231] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:232] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:232] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:235] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:235] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:236] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:236] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_REFRESH'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:241] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:241] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_REFRESH'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:242] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:242] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CKE[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:243] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:243] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CKE[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:244] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:244] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_BUSY'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:245] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:245] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_BUSY'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:246] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:246] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CMD_Q_ALMOST_FULL'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:247] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:247] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CMD_Q_ALMOST_FULL'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:248] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:248] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_DP_IDLE'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:249] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:249] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_DP_IDLE'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:250] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:250] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_PORT_BUSY[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:251] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:251] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_PORT_BUSY[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:252] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:252] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_IRQ'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:298] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:298] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_IRQ'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:299] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:299] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_HI_BER'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:306] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:306] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_HI_BER'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:307] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:307] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_PCS_STATUS'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:308] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:308] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_PCS_STATUS'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:309] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:309] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file '/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc' parsed successfully.
+INFO     : Reading core interface constraints file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Counting 3 clocks that are not assigned to clock resources as global clocks.
+WARNING  : Synchronizer chain starting at cell rst_156mhz_reset_sync_inst/r_srst_1P[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/u_reset/r_srst_1P[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/system_i2c_0_io_logic/i2cCtrl/io_i2c_scl_read_buffercc/buffers_0~FF is driven by a non-sequential source cam_scl_IN:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/genblk2.lane_aligner_inst/genblk1[0].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/genblk2.lane_aligner_inst/genblk1[3].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/genblk3.byte2pixel_inst/u1_inst/genblk2.genblk1.efx_resetsync_wr_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/syncreg_2/async_reg[0][1]~FF is driven by a non-sequential source dphy_rx1_STOPSTATE_LAN1:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/userInterruptA_buffercc/i7_2 is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_ethernet_core/u_line_to_packets/u_fwft_fifo_data/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_reset/r_srst_1P[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1/rx/io_rxd_buffercc/buffers_0~FF is driven by a non-sequential source uart_rxd:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/system_riscvJtag_debug_systemReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/system_i2c_0_io_logic/i2cCtrl/io_i2c_sda_read_buffercc/buffers_0~FF is driven by a non-sequential source cam_sda_IN:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/genblk2.lane_aligner_inst/genblk1[1].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/debugCd_logic_outputReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_ethernet_core/u_line_to_packets/u_fwft_fifo_data/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_ethernet_core/u_line_to_packets/u_fwft_fifo_trans/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/genblk3.byte2pixel_inst/u1_inst/genblk2.genblk1.efx_resetsync_rd_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_ethernet_core/u_mac10gbe/u_efx_mac10gbe/inst_init/inst_init_rst_n/active_low.efx_resetsync_active_low/async_reg[0][0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/syncreg_2/async_reg[0][0]~FF is driven by a non-sequential source dphy_rx1_STOPSTATE_LAN0:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_csi2_rx_top/u_efx_csi2_rx_top/genblk2.lane_aligner_inst/genblk1[2].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_ethernet_core/u_mac10gbe/u_efx_mac10gbe/inst_efx_xgmac/inst_mac_reset_n/active_low.efx_resetsync_active_low/async_reg[0][0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_udp_video_generator/inst_ethernet_core/u_line_to_packets/u_fwft_fifo_trans/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/io_asyncReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_sapphire/u_EfxSapphireSoc/system_riscvJtag_hard_noTap_tunnel/logic_systemLogic_bus_rsp_ccToggle/system_riscvJtag_hard_noTap_tunnel_toplevel_debugCd_logic_outputReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Timer cuts a combinational loop at the edge from i211:in[0] to i211:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i211:in[0] to i211:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i201:in[0] to i201:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i201:in[0] to i201:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i161:in[0] to i161:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i161:in[0] to i161:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i141:in[0] to i141:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i141:in[0] to i141:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i111:in[0] to i111:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i111:in[0] to i111:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i151:in[0] to i151:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i151:in[0] to i151:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i121:in[0] to i121:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i121:in[0] to i121:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i131:in[0] to i131:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i131:in[0] to i131:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i91:in[0] to i91:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i91:in[0] to i91:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i171:in[0] to i171:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i171:in[0] to i171:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i181:in[0] to i181:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i181:in[0] to i181:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i191:in[0] to i191:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i191:in[0] to i191:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i221:in[0] to i221:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i221:in[0] to i221:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i101:in[0] to i101:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i101:in[0] to i101:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i251:in[0] to i251:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i251:in[0] to i251:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i231:in[0] to i231:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i231:in[0] to i231:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i241:in[0] to i241:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i241:in[0] to i241:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i261:in[0] to i261:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i261:in[0] to i261:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i291:in[0] to i291:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i291:in[0] to i291:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i271:in[0] to i271:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i271:in[0] to i271:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i281:in[0] to i281:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i281:in[0] to i281:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i301:in[0] to i301:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i301:in[0] to i301:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i311:in[0] to i311:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i311:in[0] to i311:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i321:in[0] to i321:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i321:in[0] to i321:out [TimerMsg::CombinationalLoopDetected]
+INFO     : Starting Global Placer with 8 threads ...
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+INFO     :           1    12939210           -3915         2.6%
+INFO     :           2     8434357           -3940         4.8%
+INFO     :           3     4535854           -3405         8.9%
+INFO     :           4     2965659           -3224        17.0%
+INFO     :           5     2594291           -3032        22.6%
+INFO     :           6     2367878           -2832        26.8%
+INFO     :           7     2212452           -3112        31.1%
+INFO     :           8     2128072           -3242        34.0%
+INFO     :           9     2004122           -2827        38.1%
+INFO     :          10     1944208           -3090        41.1%
+INFO     :          11     1868711           -3120        45.1%
+INFO     :          12     1804533           -2998        48.1%
+INFO     :          13     1788675           -3063        49.1%
+INFO     :          14     1764395           -3129        50.5%
+INFO     :          15     1737390           -3176        52.0%
+INFO     :          16     1722902           -3166        54.2%
+INFO     :          17     1699959           -3122        56.2%
+INFO     :          18     1663740           -3283        57.6%
+INFO     :          19     1641808           -2958        58.9%
+INFO     :          20     1635210           -3172        61.3%
+INFO     :          21     1631015           -3120        61.3%
+INFO     :          22     1612115           -3274        62.5%
+INFO     :          23     1599101           -3182        62.9%
+INFO     :          24     1597553           -3452        66.0%
+INFO     :          25     1586053           -3320        66.4%
+INFO     :          26     1587053           -3357        66.9%
+INFO     :          27     1581361           -3281        68.0%
+INFO     :          28     1580421           -3450        70.1%
+INFO     :          29     1573402           -3313        70.1%
+INFO     :          30     1566339           -3479        72.0%
+INFO     :          31     1562692           -3385        72.0%
+INFO     :          32     1569750           -3377        75.2%
+INFO     :          33     1570356           -3248        75.2%
+INFO     :          34     1564437           -3237        77.1%
+INFO     :          35     1557756           -3300        77.1%
+INFO     :          36     1556990           -3547        77.1%
+INFO     :          37     1553401           -3163        77.9%
+INFO     :          38     1551024           -3163        78.0%
+INFO     :          39     1549338           -3354        79.5%
+INFO     :          40     1543526           -3280        82.0%
+INFO     :          41     1539791           -3474        82.1%
+INFO     :          42     1540040           -3359        82.1%
+INFO     :          43     1533593           -3348        84.9%
+INFO     :          44     1532067           -3439        85.9%
+INFO     :          45     1534387           -3433        85.9%
+INFO     :          46     1532738           -3472        87.6%
+INFO     :          47     1530390           -3604        87.6%
+INFO     :          48     1530614           -3521        88.3%
+INFO     :          49     1528047           -3630        88.3%
+INFO     :          50     1529694           -3623        88.3%
+INFO     :          51     1531085           -3463        88.3%
+INFO     :          52     1531172           -3566        89.6%
+INFO     :          53     1527565           -3519        89.6%
+INFO     :          54     1531852           -3615        89.7%
+INFO     :          55     1530102           -3562        89.7%
+INFO     :          56     1529548           -3600        91.0%
+INFO     :          57     1527263           -3584        91.0%
+INFO     :          58     1532575           -3733        91.0%
+INFO     :          59     1529831           -3700        91.0%
+INFO     :          60     1527325           -3753        91.9%
+INFO     :          61     1526928           -3727        91.9%
+INFO     :          62     1530321           -3724        91.9%
+INFO     :          63     1529484           -3730        91.9%
+INFO     :          64     1526624           -3758        92.9%
+INFO     :          65     1526813           -3818        92.9%
+INFO     :          66     1527483           -3814        92.9%
+INFO     :          67     1527746           -3907        92.9%
+INFO     :          68     1528534           -3907        93.4%
+INFO     :          69     1529210           -3800        93.4%
+INFO     :          70     1527206           -3937        94.9%
+INFO     :          71     1530651           -3887        95.0%
+INFO     :          72     1514145           -3762        95.0%
+INFO     :          73     1511378           -4143        96.2%
+INFO     :          74     1511632           -3788        96.4%
+INFO     :          75     1512118           -3874        96.4%
+INFO     :          76     1513184           -3853        96.9%
+INFO     :          77     1513101           -3974        97.0%
+INFO     :          78     1515185           -3858        97.7%
+INFO     : GP: best_placement: wpd: 3205.3
+INFO     : Starting Annealer
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0      751426            4273        30.0
+INFO     :           1      739957            3450        28.8
+INFO     :           2      729117            3220        27.1
+INFO     :           3      713320            3313        25.2
+INFO     :           4      706968            3135        23.4
+INFO     :           5      690249            3119        21.5
+INFO     :           6      686088            3062        19.8
+INFO     :           7      675281            3062        18.1
+INFO     :           8      666845            3114        16.5
+INFO     :           9      658825            3114        15.1
+INFO     :          10      654965            3137        13.7
+INFO     :          11      649542            3161        12.5
+INFO     :          12      645915            3117        11.3
+INFO     :          13      639823            3065        10.3
+INFO     :          14      637169            3065         9.3
+INFO     :          15      631578            3065         8.5
+INFO     :          16      629416            3065         7.7
+INFO     :          17      624948            3065         6.9
+INFO     :          18      622159            3065         6.3
+INFO     :          19      619285            3065         5.7
+INFO     :          20      617347            3065         5.2
+INFO     :          21      614860            3070         4.7
+INFO     :          22      613460            3070         4.2
+INFO     :          23      610571            3070         3.8
+INFO     :          24      609227            3137         3.4
+INFO     : DP: best_placement: wpd: 377.913
+INFO     : Placement successful: 30486 cells are placed
+INFO     : Peak congestion smeared over 4x4 of the chip is 1.38482 at 245,64
+INFO     : Peak congestion smeared over 1/16 of the chip is 1.03388 at 255,59
+INFO     : Peak congestion smeared over 1/4 of the chip is 0.481675 at 192,0
+INFO     : Congestion-weighted HPWL per net: 28.8386
+INFO     : Post-placement cluster-level checks is successful
+INFO     : Post-placement primitive-level checks is successful
+INFO     : Placement took 67.093696447 seconds [FlowMsg::StageDuration]
+INFO     :     Placement took 302.13 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Placement virtual memory usage: begin = 485.824 MB, end = 545.692 MB, delta = 59.868 MB [FlowMsg::VMUsage]
+INFO     : Placement resident set memory usage: begin = 127.056 MB, end = 318.972 MB, delta = 191.916 MB [FlowMsg::RSSUsage]
+INFO     :     Placement peak resident set memory usage = 426.208 MB [FlowMsg::RSSUsage::Peak]
+WARNING  : No ports matched 'osc_inst1_CLKOUT'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:19] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:19] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_DRCK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:24] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:24] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'pll_inst2_CLKOUT0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:25] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:25] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_LP_CLK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:29] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:65] A clock with name 'dphy_rx1_SLOWCLK' already exists. Overwriting the previous clock with the same name
+WARNING  : No ports matched 'dphy_rx1_LP_CLK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:66] No valid pin(s) found for clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:66] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:81] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:81] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:82] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:82] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:83] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:83] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:84] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:84] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:85] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:85] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:86] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:86] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:87] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:87] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_ERR_SOT_SYNC_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:88] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:88] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:89] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:89] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:90] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:90] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:91] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:91] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_ACTIVE_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:92] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:92] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:97] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:97] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN0'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:98] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:98] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:99] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:99] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'dphy_rx1_RX_SKEW_CAL_HS_LAN1'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:100] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:100] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_DRCK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:130] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:130] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_DRCK'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:131] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:131] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:139] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:139] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:139] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:140] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:140] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:140] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:141] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:141] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:141] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:142] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:142] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:142] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:143] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:143] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:143] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:144] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:144] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:144] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:145] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:145] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:145] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:146] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:146] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:146] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:147] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:147] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:147] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:148] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:148] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:148] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:149] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:149] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:149] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:150] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:150] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:150] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_autodbg_DRCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:151] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:151] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:151] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_autodbg_DRCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:152] No clocks matched 'jtag_inst2_autodbg_TCK__'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:152] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:152] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:223] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:223] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:224] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:224] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:225] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:225] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_BRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:226] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:226] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:231] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:231] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RID_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:232] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:232] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:235] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:235] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_RRESP_0[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:236] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:236] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_REFRESH'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:241] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:241] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_REFRESH'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:242] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:242] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CKE[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:243] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:243] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CKE[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:244] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:244] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_BUSY'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:245] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:245] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_BUSY'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:246] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:246] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CMD_Q_ALMOST_FULL'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:247] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:247] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_CMD_Q_ALMOST_FULL'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:248] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:248] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_DP_IDLE'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:249] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:249] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_DP_IDLE'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:250] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:250] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_PORT_BUSY[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:251] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:251] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_CTRL_PORT_BUSY[*]'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:252] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:252] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_IRQ'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:298] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:298] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_IRQ'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:299] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:299] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_HI_BER'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:306] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:306] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_HI_BER'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:307] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:307] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_PCS_STATUS'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:308] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:308] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'sfp0_PCS_STATUS'
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:309] set_input_delay: No valid input port(s) found
+WARNING  : [SDC /home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc:309] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file '/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/videostream.sdc' parsed successfully.
+WARNING  : Timer cuts a combinational loop at the edge from i211:in[0] to i211:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i211:in[0] to i211:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i201:in[0] to i201:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i201:in[0] to i201:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i161:in[0] to i161:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i161:in[0] to i161:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i141:in[0] to i141:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i141:in[0] to i141:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i111:in[0] to i111:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i111:in[0] to i111:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i151:in[0] to i151:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i151:in[0] to i151:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i121:in[0] to i121:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i121:in[0] to i121:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i131:in[0] to i131:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i131:in[0] to i131:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i91:in[0] to i91:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i91:in[0] to i91:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i171:in[0] to i171:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i171:in[0] to i171:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i181:in[0] to i181:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i181:in[0] to i181:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i191:in[0] to i191:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i191:in[0] to i191:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i221:in[0] to i221:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i221:in[0] to i221:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i101:in[0] to i101:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i101:in[0] to i101:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i251:in[0] to i251:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i251:in[0] to i251:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i231:in[0] to i231:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i231:in[0] to i231:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i241:in[0] to i241:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i241:in[0] to i241:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i261:in[0] to i261:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i261:in[0] to i261:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i291:in[0] to i291:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i291:in[0] to i291:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i271:in[0] to i271:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i271:in[0] to i271:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i281:in[0] to i281:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i281:in[0] to i281:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i301:in[0] to i301:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i301:in[0] to i301:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i311:in[0] to i311:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i311:in[0] to i311:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i321:in[0] to i321:out [TimerMsg::CombinationalLoopDetected]
+WARNING  : Timer cuts a combinational loop at the edge from i321:in[0] to i321:out [TimerMsg::CombinationalLoopDetected]
+Maximum possible analyzed clocks frequency
+   Clock Name    Period (ns)  Frequency (MHz)     Edge
+jtag_inst1_TCK      5.449        183.520         (R-R)
+clk_100m            5.522        181.094         (R-R)
+dphy_rx1_SLOWCLK    3.570        280.112         (R-R)
+sfp0_iface_clk      5.483        182.382         (R-R)
+
+Geomean max period: 4.926
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+jtag_inst1_TCK   jtag_inst1_TCK        50.000           44.551           (R-R)
+jtag_inst1_TCK   clk_100m              10.000            9.580           (R-R)
+jtag_inst1_TCK   jtag_inst1_TCK        25.000           23.017           (F-R)
+clk_100m         jtag_inst1_TCK        10.000            9.034           (R-R)
+clk_100m         clk_100m              10.000            4.478           (R-R)
+clk_100m         dphy_rx1_SLOWCLK       2.000            0.275           (R-R)
+clk_100m         sfp0_iface_clk         0.400           -2.847           (R-R)
+dphy_rx1_SLOWCLK clk_100m               2.000            0.388           (R-R)
+dphy_rx1_SLOWCLK dphy_rx1_SLOWCLK      16.000           12.430           (R-R)
+sfp0_iface_clk   clk_100m               0.400           -2.714           (R-R)
+sfp0_iface_clk   sfp0_iface_clk         6.400            0.917           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+jtag_inst1_TCK   jtag_inst1_TCK         0.000            0.161           (R-R)
+jtag_inst1_TCK   clk_100m               0.000            0.131           (R-R)
+jtag_inst1_TCK   jtag_inst1_TCK       -25.000           23.794           (F-R)
+clk_100m         jtag_inst1_TCK         0.000            0.175           (R-R)
+clk_100m         clk_100m               0.000           -0.805           (R-R)
+clk_100m         dphy_rx1_SLOWCLK       0.000           -0.258           (R-R)
+clk_100m         sfp0_iface_clk         0.000           -0.722           (R-R)
+dphy_rx1_SLOWCLK clk_100m               0.000            0.175           (R-R)
+dphy_rx1_SLOWCLK dphy_rx1_SLOWCLK       0.000            0.161           (R-R)
+sfp0_iface_clk   clk_100m               0.000           -0.468           (R-R)
+sfp0_iface_clk   sfp0_iface_clk         0.000           -0.787           (R-R)
+
+WARNING  : Clock domain between clk_100m (rising) and sfp0_iface_clk (rising) may not meet (slack: -2.847 ns) the setup (max) timing requirement
+WARNING  : Clock domain between sfp0_iface_clk (rising) and clk_100m (rising) may not meet (slack: -2.714 ns) the setup (max) timing requirement
+WARNING  : Clock domain between clk_100m (rising) and clk_100m (rising) may not meet (slack: -0.805 ns) the hold (min) timing requirement
+WARNING  : Clock domain between clk_100m (rising) and dphy_rx1_SLOWCLK (rising) may not meet (slack: -0.258 ns) the hold (min) timing requirement
+WARNING  : Clock domain between clk_100m (rising) and sfp0_iface_clk (rising) may not meet (slack: -0.722 ns) the hold (min) timing requirement
+WARNING  : Clock domain between sfp0_iface_clk (rising) and clk_100m (rising) may not meet (slack: -0.468 ns) the hold (min) timing requirement
+WARNING  : Clock domain between sfp0_iface_clk (rising) and sfp0_iface_clk (rising) may not meet (slack: -0.787 ns) the hold (min) timing requirement
+INFO     : Write Timing Report to "/home/steve/video_streaming_10g_demo_v1.4.1_2026.1_imx900_rpi/fpga/Ti375N1156-DK/outflow/videostream.place.timing.rpt" ...
